@@ -1,0 +1,378 @@
+/*  my Style   */
+
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Tajawal/ttf/Tajawal-Medium.ttf);
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Tajawal/ttf/Tajawal-Medium.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: Tajawal;
+    overflow-x: hidden;
+    direction: rtl;
+    background-color: #F0F0F0;
+}
+
+
+/*      Start public styles     */
+
+.pre-wrap {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.f-15px {
+    font-size: 15px !important;
+}
+
+.f-18px {
+    font-size: 18px !important;
+}
+
+.w-100px {
+    width: 100px !important;
+}
+
+.overly::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#0000, #000);
+}
+
+.box-list,
+.box-list-withou-hover {
+    margin-bottom: 2px;
+}
+
+.box-list:hover {
+    background-color: #F5F5F5 !important;
+}
+
+.box-list a,
+.box-list-withou-hover a {
+    text-decoration: none !important;
+    color: #2386C8;
+}
+
+.box-list a:hover,
+.box-list-withou-hover a:hover {
+    color: #185a87;
+}
+
+.box-list small,
+.box-list-withou-hover small {
+    font-size: 90%;
+}
+
+.label-state {
+    font-size: 14px;
+    padding: 3px 5px;
+}
+
+
+/*      End public styles     */
+
+
+/*  Start Update style bootstrap  */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.alert-dismissible {
+    padding-right: 0;
+    padding-left: 4rem;
+}
+
+.alert-dismissible .close {
+    left: 0;
+}
+
+
+/* custom checkbox */
+
+.custom-control-label::before,
+.custom-control-label::after {
+    right: -1.5rem;
+}
+
+.pagination-center>ul {
+    justify-content: center;
+}
+
+.pagination {
+    padding-right: 0;
+}
+
+@media (max-width: 576px) {
+    .slide .carousel-caption h4 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .slide .carousel-caption h4 {
+        font-size: 20px;
+    }
+}
+
+
+/*  End Update style boostrap   */
+
+
+/* Start loadding style */
+
+.loader {
+    border: 15px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 15px solid #3498db;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* End loadding style */
+
+
+/* Start buttong go to top */
+
+#btn-go-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    opacity: .7;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#btn-go-top:hover {
+    opacity: .9;
+}
+
+
+/*  End buttong go to top */
+
+
+/* Start logo   */
+
+.logo {
+    background-image: url('../images/logo.jpg');
+    height: 124px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #88bf9ffc;
+}
+
+
+/*  End logo    */
+
+
+/*  Start news-bar  */
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.ticker-container .ticker-title {
+    position: relative;
+}
+
+.ticker-container .ticker-title::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    border-style: solid;
+    border-color: #6c757d #6c757d #6c757d #5757b900;
+    z-index: 99;
+    border-width: 20px 15px;
+}
+
+.ticker-container .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    padding: 10px 0;
+}
+
+.ticker-container .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 30s;
+}
+
+.ticker-container .ticker-item {
+    display: inline-block;
+    /*  margin: 0 3rem; */
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.ticker-container .ticker-item:not(:last-child)::after {
+    content: '|';
+    padding: 0 3em;
+    color: #000;
+}
+
+.ticker-container .ticker-item:hover {
+    color: #185a87;
+}
+
+
+/*  End news-bar  */
+
+
+/*  Start news    */
+
+.news .news-box-img {
+    overflow: hidden;
+}
+
+.news .news-img {
+    transition: 0.5s all ease-in-out;
+    /* width: 220px;
+    height: 160px; */
+}
+
+.news .news-img:hover {
+    transform: scale(1.25);
+}
+
+.news a {
+    text-decoration: none !important;
+    color: #2386C8;
+}
+
+.news a:hover {
+    color: #185a87;
+}
+
+
+/*  End news    */
+
+
+/*  Start show(insted of) image on input=file */
+
+.box-upload-img {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.box-upload-img img {
+    height: 150px;
+    width: 150px;
+}
+
+.box-upload-img::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #524c4c5e;
+    content: '\f030';
+    z-index: 99;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #fffdfdd9;
+    font-size: 42px;
+    border-radius: 50%;
+    line-height: 3.5;
+}
+
+
+/*  End show(insted of) image on input=file */
+
+
+/*  Start footer    */
+
+.footer .footer-center i {
+    background-color: #6c757d;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+
+/*  End footer  */

@@ -1,0 +1,88 @@
+﻿
+
+.pageTitle {
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+    margin: 5px 38%;
+    text-align: center;
+}
+
+.row {
+    margin: 50px;
+}
+
+.col-3 {
+    float: right !important;
+}
+
+table tr {
+    height: 50px;
+    width: 100%;
+}
+
+#total-row {
+    height: 82px;
+}
+
+.details-link {
+    float: left;
+}
+
+#details-row {
+    display: none;
+}
+
+
+.table tbody tr th {
+    text-align: center;
+}
+
+.table tbody tr:hover .centerHeaderText {
+    background-color: #DAF7DC;
+}
+
+
+.hiddenField {
+    display:none;
+}
+
+.subrow {
+    margin-top: 5px;
+    margin-bottom:20px;
+    direction: ltr;
+}
+
+.smsRow {
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+
+#buttonsRow  {
+    margin: 25px;
+}
+
+#contactInfoRow {
+    margin: 25px;
+}
+
+table {
+    border-radius: 20px;
+}
+
+
+#balanceWarningDiv, .warningLabel {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgba(221,247,223,0.32);
+}
+
+
+
+
+
+
+

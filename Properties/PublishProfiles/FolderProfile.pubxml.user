@@ -1,0 +1,1370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\k.buishi\Desktop\123w</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app_users_active_per_branchs.aspx">
+      <publishTime>01/13/2021 13:16:26</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap.min.css">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap.min.rtl.css">
+      <publishTime>08/21/2020 22:03:09</publishTime>
+    </File>
+    <File Include="assets/css/demo.css">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/css/demo.rtl.css">
+      <publishTime>07/16/2020 00:29:11</publishTime>
+    </File>
+    <File Include="assets/css/documentation.css">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/css/light-bootstrap-dashboard.css">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/css/light-bootstrap-dashboard.rtl.css">
+      <publishTime>12/02/2020 17:45:40</publishTime>
+    </File>
+    <File Include="assets/fonts/nucleo-icons.eot">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/fonts/nucleo-icons.svg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/fonts/nucleo-icons.ttf">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/fonts/nucleo-icons.woff">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/fonts/nucleo-icons.woff2">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/apple-icon.png">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/bg11.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/bg4.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/bg5.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/bg6.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/bg7.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/bg8.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/blog-1.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/blog-2.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/blog-3.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/blog-4.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/blog-5.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/carousel_1.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/carousel_2.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/carousel_3.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/default-avatar.png">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-0.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-1.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-2.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-3.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-4.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-5.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-6.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/face-7.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/margot.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/faces/tim_vector.jpe">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/favicon.ico">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/flags/AD.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/AE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/AG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/AM.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/AR.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/AT.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/AU.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/BE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/BF.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/BG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/BO.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/BR.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CD.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CH.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CL.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CM.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CN.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CO.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/CZ.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/DE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/DJ.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/DK.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/DZ.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/EE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/EG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/ES.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/FI.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/FR.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/GA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/GB.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/GM.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/GT.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/HN.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/HT.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/HU.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/ID.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/IE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/IL.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/IN.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/IQ.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/IR.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/IT.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/JM.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/JO.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/JP.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/KG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/KN.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/KP.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/KR.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/KW.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/KZ.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/LA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/LB.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/LC.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/LS.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/LU.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/LV.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/MG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/MK.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/ML.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/MM.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/MT.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/MX.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/NA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/NE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/NG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/NI.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/NL.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/NO.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/OM.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/PA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/PE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/PG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/PK.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/PL.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/PT.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/PY.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/QA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/RO.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/RU.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/RW.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/SA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/SE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/SG.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/SL.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/SN.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/SO.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/SV.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/TD.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/TJ.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/TL.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/TR.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/TZ.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/UA.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/US.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/VE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/VN.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/flags/YE.png">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/img/full-screen-image-1.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/full-screen-image-2.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/full-screen-image-3.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/full-screen-image-4.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/loading-bubbles.svg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/margot.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/mask.png">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/new_logo.png">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-1.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-2.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-3.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-4.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/sidebar-5.jpg">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/tim_80x80.png">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/img/viber_image_2021-02-04_14-47-39.jpg">
+      <publishTime>02/04/2021 14:47:41</publishTime>
+    </File>
+    <File Include="assets/js/core/bootstrap.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/core/jquery.3.2.1.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/core/popper.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/demo.js">
+      <publishTime>04/25/2021 11:15:00</publishTime>
+    </File>
+    <File Include="assets/js/light-bootstrap-dashboard.js">
+      <publishTime>07/08/2019 11:10:18</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-datetimepicker.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-notify.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-selectpicker.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-switch.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-table.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-tagsinput.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/chartist.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/fullcalendar.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jasny-bootstrap.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-jvectormap.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery.bootstrap-wizard.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery.dataTables.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery.validate.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/moment.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/nouislider.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/perfect-scrollbar.jquery.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/js/plugins/sweetalert2.min.js">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_buttons.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_cards.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_chartist.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_icons.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_inputs.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_labels.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_morphing-buttons.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_navbars.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_social-buttons.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_table-row.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_tabs.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_transparency.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/mixins/_vendor-prefixes.scss">
+      <publishTime>12/13/2017 11:55:12</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_animate.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_bootstrap-select.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_bootstrap-table.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_chartist.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_datatables.net.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_datetime-picker.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_fullcalendar.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_jquery.jvectormap.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_nouislider.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_perfect-scrollbar.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/plugins/_sweetalert2.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_alerts.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_bootstrap-switch.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_buttons.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_cards.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_chartist.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_checkbox-radio-switch.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_dropdown.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_fixed-plugin.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_footers.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_inputs.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_misc.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_mixins.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_modal.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_modals.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_navbars.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_partial-nucleo-icons.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_progress-bars.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_responsive.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_sidebar-and-main-panel.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_sliders.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_social-buttons.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_tables.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_tabs-navs-pagination.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_tags.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_typography.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/lbd/_variables.scss">
+      <publishTime>12/13/2017 11:55:10</publishTime>
+    </File>
+    <File Include="assets/sass/light-bootstrap-dashboard.scss">
+      <publishTime>07/08/2019 11:10:10</publishTime>
+    </File>
+    <File Include="AutoSmsCount.aspx">
+      <publishTime>11/29/2020 17:45:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/13/2021 22:54:30</publishTime>
+    </File>
+    <File Include="bin/ReportsProject.dll">
+      <publishTime>05/17/2021 13:48:44</publishTime>
+    </File>
+    <File Include="bin/ReportsProject.pdb">
+      <publishTime>05/17/2021 13:48:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/24/2018 13:38:22</publishTime>
+    </File>
+    <File Include="BV_C_S.aspx">
+      <publishTime>03/10/2021 21:01:56</publishTime>
+    </File>
+    <File Include="BV_Faield.aspx">
+      <publishTime>03/11/2021 09:52:48</publishTime>
+    </File>
+    <File Include="BV_sucsees.aspx">
+      <publishTime>05/16/2021 13:49:06</publishTime>
+    </File>
+    <File Include="CARDS_SUM.aspx">
+      <publishTime>03/11/2021 11:56:28</publishTime>
+    </File>
+    <File Include="CARDS_SUM_PER_COMPANY.aspx">
+      <publishTime>03/11/2021 15:12:52</publishTime>
+    </File>
+    <File Include="Custemors_active_FinacialTran_perBranch.aspx">
+      <publishTime>01/25/2021 18:10:33</publishTime>
+    </File>
+    <File Include="Custemors_active_servis.aspx">
+      <publishTime>12/31/2020 20:37:19</publishTime>
+    </File>
+    <File Include="Custemors_Frinds.aspx">
+      <publishTime>01/28/2021 10:50:22</publishTime>
+    </File>
+    <File Include="custemors_per_branch.aspx">
+      <publishTime>11/18/2020 00:16:47</publishTime>
+    </File>
+    <File Include="custperstate.aspx">
+      <publishTime>11/29/2020 15:15:23</publishTime>
+    </File>
+    <File Include="Custs_Act_MTrans.aspx">
+      <publishTime>03/30/2021 20:04:16</publishTime>
+    </File>
+    <File Include="Custs_per_class.aspx">
+      <publishTime>11/04/2020 19:19:36</publishTime>
+    </File>
+    <File Include="Custs_Per_dateTime.aspx">
+      <publishTime>01/13/2021 19:48:54</publishTime>
+    </File>
+    <File Include="Cus_Not_Act_withContractNUm.aspx">
+      <publishTime>05/17/2021 09:55:37</publishTime>
+    </File>
+    <File Include="Cus_no_app.aspx">
+      <publishTime>03/30/2021 20:27:06</publishTime>
+    </File>
+    <File Include="Cus_Stoped_bybank.aspx">
+      <publishTime>02/22/2021 21:41:10</publishTime>
+    </File>
+    <File Include="DataSet1.xsc">
+      <publishTime>02/22/2021 17:24:04</publishTime>
+    </File>
+    <File Include="DataSet1.xss">
+      <publishTime>02/22/2021 17:24:04</publishTime>
+    </File>
+    <File Include="DataSet2.xsc">
+      <publishTime>08/15/2020 17:46:30</publishTime>
+    </File>
+    <File Include="DataSet2.xss">
+      <publishTime>08/15/2020 17:46:30</publishTime>
+    </File>
+    <File Include="DataSet3.xsc">
+      <publishTime>09/19/2020 19:37:59</publishTime>
+    </File>
+    <File Include="DataSet3.xss">
+      <publishTime>09/19/2020 19:37:59</publishTime>
+    </File>
+    <File Include="DW_Faield.aspx">
+      <publishTime>03/28/2021 09:23:33</publishTime>
+    </File>
+    <File Include="DW_SD_C_S.aspx">
+      <publishTime>03/13/2021 21:39:35</publishTime>
+    </File>
+    <File Include="DW_Sucsees.aspx">
+      <publishTime>03/11/2021 15:07:43</publishTime>
+    </File>
+    <File Include="DW_td_C_S.aspx">
+      <publishTime>03/13/2021 21:43:03</publishTime>
+    </File>
+    <File Include="ES_Faield.aspx">
+      <publishTime>03/21/2021 10:03:38</publishTime>
+    </File>
+    <File Include="ES_Success.aspx">
+      <publishTime>03/13/2021 23:06:10</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>02/17/2021 15:32:51</publishTime>
+    </File>
+    <File Include="HomePage.aspx">
+      <publishTime>02/07/2021 10:11:36</publishTime>
+    </File>
+    <File Include="KA_BV_Count.aspx">
+      <publishTime>03/14/2021 00:24:12</publishTime>
+    </File>
+    <File Include="KA_cir_Faield_NCB.aspx">
+      <publishTime>03/14/2021 00:28:14</publishTime>
+    </File>
+    <File Include="KA_cir_NCB.aspx">
+      <publishTime>03/14/2021 00:35:31</publishTime>
+    </File>
+    <File Include="KA_Dw_Count.aspx">
+      <publishTime>03/14/2021 00:39:03</publishTime>
+    </File>
+    <File Include="KA_ES_Count.aspx">
+      <publishTime>03/14/2021 00:55:22</publishTime>
+    </File>
+    <File Include="KA_MT_Count.aspx">
+      <publishTime>03/14/2021 00:57:08</publishTime>
+    </File>
+    <File Include="KA_PB_Count.aspx">
+      <publishTime>03/14/2021 01:01:09</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/14/2021 00:12:08</publishTime>
+    </File>
+    <File Include="login2.aspx">
+      <publishTime>01/24/2021 12:20:04</publishTime>
+    </File>
+    <File Include="Master_allow_bayeElct.aspx">
+      <publishTime>01/28/2021 12:19:11</publishTime>
+    </File>
+    <File Include="master_Balance_riquest.aspx">
+      <publishTime>01/28/2021 12:05:04</publishTime>
+    </File>
+    <File Include="master_ChangePin_Sucsses_faield.aspx">
+      <publishTime>01/28/2021 12:19:11</publishTime>
+    </File>
+    <File Include="master_ChangeState.aspx">
+      <publishTime>03/30/2021 18:45:47</publishTime>
+    </File>
+    <File Include="Master_ChangeState_Transactions.aspx">
+      <publishTime>02/01/2021 12:44:36</publishTime>
+    </File>
+    <File Include="Master_MoneyTransfer.aspx">
+      <publishTime>02/03/2021 21:03:20</publishTime>
+    </File>
+    <File Include="Master_MT_bercard_SUM.aspx">
+      <publishTime>03/30/2021 18:52:23</publishTime>
+    </File>
+    <File Include="MT_C_S.aspx">
+      <publishTime>03/14/2021 01:05:18</publishTime>
+    </File>
+    <File Include="MT_Faield.aspx">
+      <publishTime>03/14/2021 01:07:48</publishTime>
+    </File>
+    <File Include="MT_Success.aspx">
+      <publishTime>05/16/2021 11:33:06</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_limet_per_classification.aspx">
+      <publishTime>02/03/2021 11:29:11</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_mobicash_count.aspx">
+      <publishTime>04/15/2021 12:08:03</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_not_benifie.aspx">
+      <publishTime>01/28/2021 12:12:25</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_not_benifit_from Payment.aspx">
+      <publishTime>02/08/2021 20:58:44</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_Pay_SumPayment_perDate.aspx">
+      <publishTime>02/08/2021 21:56:30</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_per_branch.aspx">
+      <publishTime>03/29/2021 17:55:10</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_Sum_Pay_ChargeBack.aspx">
+      <publishTime>01/28/2021 18:55:31</publishTime>
+    </File>
+    <File Include="NC-Mobi-custemors_Sum_Pay_PerCity.aspx">
+      <publishTime>01/28/2021 12:19:11</publishTime>
+    </File>
+    <File Include="NC-Mobi-MerchantState.aspx">
+      <publishTime>02/10/2021 13:40:09</publishTime>
+    </File>
+    <File Include="NC-Mobi-Merchants_berBeusnisType.aspx">
+      <publishTime>02/10/2021 17:26:44</publishTime>
+    </File>
+    <File Include="NC-Mobi-Merchants_Class.aspx">
+      <publishTime>01/30/2021 16:45:22</publishTime>
+    </File>
+    <File Include="NC-Mobi-Merchants_not_benefiting_from_service.aspx">
+      <publishTime>03/08/2021 18:35:35</publishTime>
+    </File>
+    <File Include="NC-Mobi-Merchant_per_city.aspx">
+      <publishTime>01/28/2021 12:19:11</publishTime>
+    </File>
+    <File Include="NC-Mobi-mobimalpay_newSubscriptions.aspx">
+      <publishTime>04/25/2021 01:54:00</publishTime>
+    </File>
+    <File Include="NC-Mobi-Mobimal_Full.aspx">
+      <publishTime>04/25/2021 10:26:14</publishTime>
+    </File>
+    <File Include="NC-Mobi-Must_custemors_sales.aspx">
+      <publishTime>02/10/2021 13:32:07</publishTime>
+    </File>
+    <File Include="NC-Mobi-num_BeusninTypes.aspx">
+      <publishTime>02/10/2021 18:25:16</publishTime>
+    </File>
+    <File Include="NC-Mobi-num_cust_servise.aspx">
+      <publishTime>01/28/2021 14:14:29</publishTime>
+    </File>
+    <File Include="NCB-Count-FaildBP.aspx">
+      <publishTime>03/30/2021 13:40:26</publishTime>
+    </File>
+    <File Include="NCB-Count-FaildCards.aspx">
+      <publishTime>03/21/2021 10:38:21</publishTime>
+    </File>
+    <File Include="NCB-Count-FaildDW.aspx">
+      <publishTime>04/30/2021 01:18:57</publishTime>
+    </File>
+    <File Include="NCB-Count-FaildES.aspx">
+      <publishTime>03/21/2021 11:04:02</publishTime>
+    </File>
+    <File Include="NCB-Count-FaildMT.aspx">
+      <publishTime>03/21/2021 11:07:37</publishTime>
+    </File>
+    <File Include="NCB-Count-SucssesCards.aspx">
+      <publishTime>03/21/2021 10:49:23</publishTime>
+    </File>
+    <File Include="NCB-Count-SucssesDW.aspx">
+      <publishTime>05/01/2021 16:08:07</publishTime>
+    </File>
+    <File Include="NCB-Count-SucssesES.aspx">
+      <publishTime>03/21/2021 11:05:27</publishTime>
+    </File>
+    <File Include="NCB-Count-SucssesMT.aspx">
+      <publishTime>03/30/2021 14:28:52</publishTime>
+    </File>
+    <File Include="NCB-Count-SucssesPP.aspx">
+      <publishTime>03/30/2021 13:46:55</publishTime>
+    </File>
+    <File Include="NCB-Counts-AutoSms.aspx">
+      <publishTime>11/04/2020 18:02:36</publishTime>
+    </File>
+    <File Include="NCB-Counts-smsusers.aspx">
+      <publishTime>11/04/2020 18:02:36</publishTime>
+    </File>
+    <File Include="NCB-Counts-StopChick.aspx">
+      <publishTime>01/26/2021 14:48:52</publishTime>
+    </File>
+    <File Include="NCB-LIMET-carddetales.aspx">
+      <publishTime>01/13/2021 21:15:53</publishTime>
+    </File>
+    <File Include="NCB-LIMET-DW.aspx">
+      <publishTime>11/04/2020 18:02:36</publishTime>
+    </File>
+    <File Include="NCB-LIMET-MantTrans.aspx">
+      <publishTime>11/04/2020 18:02:36</publishTime>
+    </File>
+    <File Include="NCB-LIMET-mobimalpay-Custs.aspx">
+      <publishTime>03/28/2021 14:10:29</publishTime>
+    </File>
+    <File Include="NCB-LIMET-mobimalpay-Merchants.aspx">
+      <publishTime>02/11/2021 15:14:16</publishTime>
+    </File>
+    <File Include="NCB-LIMET-PP.aspx">
+      <publishTime>11/28/2020 22:50:42</publishTime>
+    </File>
+    <File Include="Ncb-mobi-merr.aspx">
+      <publishTime>03/29/2021 11:38:55</publishTime>
+    </File>
+    <File Include="Ncb-mobi-Pay_All.aspx">
+      <publishTime>03/29/2021 11:15:18</publishTime>
+    </File>
+    <File Include="Ncb-mobi-Pay_All_perBranch.aspx">
+      <publishTime>03/29/2021 11:07:54</publishTime>
+    </File>
+    <File Include="NCB.aspx">
+      <publishTime>01/27/2021 15:18:21</publishTime>
+    </File>
+    <File Include="NCBMAIN.aspx">
+      <publishTime>02/22/2021 19:02:43</publishTime>
+    </File>
+    <File Include="NCBMAS.Master">
+      <publishTime>04/25/2021 01:17:52</publishTime>
+    </File>
+    <File Include="NC_Mobi_custemors_Pay_SumPayment_perBranch.aspx">
+      <publishTime>01/28/2021 14:20:24</publishTime>
+    </File>
+    <File Include="NC_Mobi_custemors_Sum_Pay_PerMerchant.aspx">
+      <publishTime>03/31/2021 11:35:28</publishTime>
+    </File>
+    <File Include="NC_Mobi_custemors_Sum_POSPay_PerMerchant.aspx">
+      <publishTime>03/31/2021 11:38:19</publishTime>
+    </File>
+    <File Include="NC_Mobi_Hight_Merchants_Payment.aspx">
+      <publishTime>04/25/2021 01:22:50</publishTime>
+    </File>
+    <File Include="NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type.aspx">
+      <publishTime>02/10/2021 15:21:02</publishTime>
+    </File>
+    <File Include="NC_Mobi_num_Citys.aspx">
+      <publishTime>02/10/2021 15:09:41</publishTime>
+    </File>
+    <File Include="NC_Mobi_num_Merchants_Pos.aspx">
+      <publishTime>02/10/2021 18:56:54</publishTime>
+    </File>
+    <File Include="NC_Mobi_num_Merchants_Pos_per_merchant.aspx">
+      <publishTime>02/15/2021 20:12:56</publishTime>
+    </File>
+    <File Include="OrderSmsCount.aspx">
+      <publishTime>02/22/2021 20:44:29</publishTime>
+    </File>
+    <File Include="OS_Type.aspx">
+      <publishTime>02/02/2021 12:57:53</publishTime>
+    </File>
+    <File Include="Pos_transaction_per_merchant.aspx">
+      <publishTime>01/06/2021 21:29:47</publishTime>
+    </File>
+    <File Include="PP_C_S.aspx">
+      <publishTime>03/14/2021 09:30:18</publishTime>
+    </File>
+    <File Include="PP_Faield.aspx">
+      <publishTime>03/21/2021 10:09:57</publishTime>
+    </File>
+    <File Include="PP_Succees.aspx">
+      <publishTime>05/16/2021 14:25:50</publishTime>
+    </File>
+    <File Include="RP_Cus_notact.aspx">
+      <publishTime>08/24/2020 15:26:49</publishTime>
+    </File>
+    <File Include="Sdad_Faield.aspx">
+      <publishTime>03/14/2021 20:07:06</publishTime>
+    </File>
+    <File Include="SmsUserCount.aspx">
+      <publishTime>12/19/2020 15:40:40</publishTime>
+    </File>
+    <File Include="Sum_MassegsUsers_perRequest.aspx">
+      <publishTime>01/14/2021 15:41:35</publishTime>
+    </File>
+    <File Include="Tdawel_faield.aspx">
+      <publishTime>03/21/2021 10:18:43</publishTime>
+    </File>
+    <File Include="Tejari_card_mazal.aspx">
+      <publishTime>05/17/2021 13:41:14</publishTime>
+    </File>
+    <File Include="tej_limet.aspx">
+      <publishTime>01/13/2021 20:55:07</publishTime>
+    </File>
+    <File Include="transfer.html">
+      <publishTime>12/03/2020 13:50:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/14/2021 10:15:48</publishTime>
+    </File>
+    <File Include="WebForm2.aspx">
+      <publishTime>12/27/2020 19:17:04</publishTime>
+    </File>
+    <File Include="Wehda/app_users_active_per_branchs_W.aspx">
+      <publishTime>02/22/2021 17:27:22</publishTime>
+    </File>
+    <File Include="Wehda/AutoSmsCount_W.aspx">
+      <publishTime>02/23/2021 18:32:09</publishTime>
+    </File>
+    <File Include="Wehda/BV_C_S_W.aspx">
+      <publishTime>03/17/2021 13:24:50</publishTime>
+    </File>
+    <File Include="Wehda/BV_Faield_W.aspx">
+      <publishTime>03/17/2021 13:29:33</publishTime>
+    </File>
+    <File Include="Wehda/BV_sucsees_W.aspx">
+      <publishTime>03/18/2021 12:58:33</publishTime>
+    </File>
+    <File Include="Wehda/CARDS_SUM_PER_COMPANY_W.aspx">
+      <publishTime>03/29/2021 19:29:05</publishTime>
+    </File>
+    <File Include="Wehda/CARDS_SUM_W.aspx">
+      <publishTime>03/17/2021 13:52:30</publishTime>
+    </File>
+    <File Include="Wehda/Custemors_active_FinacialTran_perBranch_W.aspx">
+      <publishTime>02/23/2021 18:32:08</publishTime>
+    </File>
+    <File Include="Wehda/Custemors_active_servis_W.aspx">
+      <publishTime>03/20/2021 20:17:27</publishTime>
+    </File>
+    <File Include="Wehda/Custemors_Frinds_W.aspx">
+      <publishTime>03/02/2021 16:24:56</publishTime>
+    </File>
+    <File Include="Wehda/custemors_per_branch_W.aspx">
+      <publishTime>03/02/2021 14:46:32</publishTime>
+    </File>
+    <File Include="Wehda/custperstate_W.aspx">
+      <publishTime>02/23/2021 18:32:08</publishTime>
+    </File>
+    <File Include="Wehda/Custs_Act_MTrans_W.aspx">
+      <publishTime>02/23/2021 18:32:08</publishTime>
+    </File>
+    <File Include="Wehda/Custs_per_class_W.aspx">
+      <publishTime>03/20/2021 16:16:08</publishTime>
+    </File>
+    <File Include="Wehda/Custs_Per_dateTime_W.aspx">
+      <publishTime>03/02/2021 19:11:34</publishTime>
+    </File>
+    <File Include="Wehda/Cus_Not_Act_withContractNUm_W.aspx">
+      <publishTime>03/29/2021 20:57:17</publishTime>
+    </File>
+    <File Include="Wehda/Cus_no_app_W.aspx">
+      <publishTime>02/23/2021 18:32:08</publishTime>
+    </File>
+    <File Include="Wehda/Cus_Stoped_bybank_W.aspx">
+      <publishTime>02/23/2021 18:32:08</publishTime>
+    </File>
+    <File Include="Wehda/ES_Faield_W.aspx">
+      <publishTime>03/17/2021 22:19:01</publishTime>
+    </File>
+    <File Include="Wehda/ES_Success_W.aspx">
+      <publishTime>03/17/2021 14:07:32</publishTime>
+    </File>
+    <File Include="Wehda/KA_BV_Count_W.aspx">
+      <publishTime>03/17/2021 14:22:14</publishTime>
+    </File>
+    <File Include="Wehda/KA_ES_Count_W.aspx">
+      <publishTime>03/17/2021 14:30:20</publishTime>
+    </File>
+    <File Include="Wehda/KA_MT_Count_W.aspx">
+      <publishTime>03/17/2021 14:32:54</publishTime>
+    </File>
+    <File Include="Wehda/MT_C_S_W.aspx">
+      <publishTime>03/17/2021 14:36:26</publishTime>
+    </File>
+    <File Include="Wehda/MT_Faield_W.aspx">
+      <publishTime>03/17/2021 22:27:06</publishTime>
+    </File>
+    <File Include="Wehda/MT_Success_W.aspx">
+      <publishTime>03/29/2021 17:55:09</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_limet_per_classification_W.aspx">
+      <publishTime>03/04/2021 09:43:30</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_mobicash_count_W.aspx">
+      <publishTime>03/20/2021 21:35:13</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_not_benifie_W.aspx">
+      <publishTime>02/23/2021 19:22:01</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_not_benifit_from Payment_W.aspx">
+      <publishTime>03/04/2021 20:08:17</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_Pay_SumPayment_perDate_W.aspx">
+      <publishTime>03/04/2021 09:52:56</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_per_branch_W.aspx">
+      <publishTime>03/29/2021 11:44:57</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_Sum_Pay_ChargeBack_W.aspx">
+      <publishTime>03/04/2021 11:24:41</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-custemors_Sum_Pay_PerCity_W.aspx">
+      <publishTime>03/06/2021 19:25:42</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-MerchantState_W.aspx">
+      <publishTime>03/20/2021 20:36:29</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-Merchants_berBeusnisType_W.aspx">
+      <publishTime>02/23/2021 19:22:01</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-Merchants_Class_W.aspx">
+      <publishTime>03/20/2021 20:49:43</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-Merchants_not_benefiting_from_service_W.aspx">
+      <publishTime>03/20/2021 20:40:35</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-Merchant_per_city_W.aspx">
+      <publishTime>03/07/2021 11:00:04</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-mobimalpay_newSubscriptions_W.aspx">
+      <publishTime>03/07/2021 11:53:35</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-Mobimal_Full_W.aspx">
+      <publishTime>03/20/2021 20:19:32</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-Must_custemors_sales_W.aspx">
+      <publishTime>03/07/2021 11:54:28</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-num_BeusninTypes_W.aspx">
+      <publishTime>03/07/2021 11:57:07</publishTime>
+    </File>
+    <File Include="Wehda/NC-Mobi-num_cust_servise_W.aspx">
+      <publishTime>03/07/2021 11:59:04</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Count-FaildCards_W.aspx">
+      <publishTime>03/18/2021 13:21:06</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Count-FaildES_W.aspx">
+      <publishTime>03/18/2021 13:56:25</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Count-FaildMT_W.aspx">
+      <publishTime>03/18/2021 14:09:26</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Count-SucssesCards_W.aspx">
+      <publishTime>03/18/2021 13:38:26</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Count-SucssesES_W.aspx">
+      <publishTime>03/18/2021 13:49:01</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Count-SucssesMT_W.aspx">
+      <publishTime>03/18/2021 14:28:51</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Counts-AutoSms_W.aspx">
+      <publishTime>02/28/2021 15:29:01</publishTime>
+    </File>
+    <File Include="Wehda/NCB-Counts-smsusers_W.aspx">
+      <publishTime>02/28/2021 15:29:01</publishTime>
+    </File>
+    <File Include="Wehda/NCB-LIMET-carddetales_W.aspx">
+      <publishTime>03/20/2021 20:12:53</publishTime>
+    </File>
+    <File Include="Wehda/NCB-LIMET-MantTrans_W.aspx">
+      <publishTime>03/20/2021 21:48:08</publishTime>
+    </File>
+    <File Include="Wehda/NCB-LIMET-mobimalpay-Custs_W.aspx">
+      <publishTime>03/20/2021 22:03:12</publishTime>
+    </File>
+    <File Include="Wehda/NCB-LIMET-mobimalpay-Merchants_W.aspx">
+      <publishTime>03/20/2021 22:07:25</publishTime>
+    </File>
+    <File Include="Wehda/Ncb-mobi-merr_W.aspx">
+      <publishTime>03/29/2021 10:47:07</publishTime>
+    </File>
+    <File Include="Wehda/Ncb-mobi-Pay_All_perBranch_W.aspx">
+      <publishTime>03/29/2021 11:09:32</publishTime>
+    </File>
+    <File Include="Wehda/Ncb-mobi-Pay_All_W.aspx">
+      <publishTime>03/29/2021 11:15:37</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_custemors_Pay_SumPayment_perBranch_W.aspx">
+      <publishTime>03/07/2021 12:17:05</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_custemors_Sum_Pay_PerMerchant_W.aspx">
+      <publishTime>03/07/2021 12:15:47</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_custemors_Sum_POSPay_PerMerchant_W.aspx">
+      <publishTime>03/07/2021 12:52:40</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type_W.aspx">
+      <publishTime>03/20/2021 20:47:13</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_Hight_Merchants_Payment_W.aspx">
+      <publishTime>02/23/2021 19:57:19</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_num_Citys_W.aspx">
+      <publishTime>02/23/2021 19:57:19</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_num_Merchants_Pos_per_merchant.aspx">
+      <publishTime>03/07/2021 13:04:32</publishTime>
+    </File>
+    <File Include="Wehda/NC_Mobi_num_Merchants_Pos_W.aspx">
+      <publishTime>03/07/2021 13:05:45</publishTime>
+    </File>
+    <File Include="Wehda/OrderSmsCount_W.aspx">
+      <publishTime>03/20/2021 17:43:38</publishTime>
+    </File>
+    <File Include="Wehda/OS_Type_W.aspx">
+      <publishTime>02/28/2021 15:29:00</publishTime>
+    </File>
+    <File Include="Wehda/Pos_transaction_per_merchant_W.aspx">
+      <publishTime>03/08/2021 20:45:29</publishTime>
+    </File>
+    <File Include="Wehda/RP_Cus_notact_W.aspx">
+      <publishTime>03/08/2021 20:50:05</publishTime>
+    </File>
+    <File Include="Wehda/SmsUserCount_W.aspx">
+      <publishTime>02/28/2021 15:28:59</publishTime>
+    </File>
+    <File Include="Wehda/Sum_MassegsUsers_perRequest_W.aspx">
+      <publishTime>02/28/2021 15:28:58</publishTime>
+    </File>
+    <File Include="Wehda/Tejari_card_mazal_W.aspx">
+      <publishTime>03/18/2021 10:30:20</publishTime>
+    </File>
+    <File Include="Wehda/tej_limet_W.aspx">
+      <publishTime>02/28/2021 15:28:59</publishTime>
+    </File>
+    <File Include="Wehda/WahdaMaster.Master">
+      <publishTime>03/29/2021 21:04:12</publishTime>
+    </File>
+    <File Include="Wehda/WebForm1.aspx">
+      <publishTime>02/03/2021 14:22:54</publishTime>
+    </File>
+    <File Include="Wehda/WEHDAMAIN.aspx">
+      <publishTime>02/22/2021 21:40:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

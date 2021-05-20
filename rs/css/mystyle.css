@@ -1,0 +1,150 @@
+﻿* {
+    box-sizing: border-box;
+    font-size: 19px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    direction: rtl;
+}
+
+
+
+li a {
+    font-size: 14px !important
+}
+
+h3 {
+    text-align: right;
+}
+
+
+.form {
+    border: 1px solid;
+    border-radius: 35px;
+    padding: 33px 96px;
+    margin: 39px 270px;
+    width: 800px;
+}
+
+.upper-bar {
+    background: #0b85a9f5;
+    text-align: center;
+    padding: 20px;
+    color: #FFF;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+    .upper-bar h1 {
+        margin: 0;
+        padding: 8px
+    }
+
+.content {
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 20px;
+    margin-left: 15%;
+    margin-top: 15px;
+    position: relative;
+}
+
+.form-m {
+    margin-top: 15px
+}
+
+.ml {
+    margin-left: 15px
+}
+
+.logo {
+    position: absolute;
+    width: 236px;
+    height: 180px;
+    top: 58px;
+    left: 39px;
+    border-radius: 28%;
+    z-index: 555
+}
+
+.btn-primary {
+    background-color: #158aac;
+    margin-right: 40%;
+    margin-top: 13px;
+    width: 100px;
+}
+
+.img-size {
+    height: 100px;
+    width: 300px
+}
+
+.bg {
+    border-radius: 5px;
+    margin-top: 60px;
+    border: 2px solid #d6d6d645;
+}
+
+.show-h {
+    border-bottom: 1px solid #777;
+    padding-bottom: 15px;
+    margin: 35px 38%;
+    text-align: center;
+}
+/*Start fiexd menu*/
+
+.fiexd-menu {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: -220px;
+    height: 100%;
+    z-index: 999999;
+    width: 220px;
+}
+
+    .fiexd-menu .icon {
+        background-color: #333;
+        position: absolute;
+        right: 220px;
+        top: 125px;
+        width: 30px;
+        height: 30px;
+        padding: 6px 5px;
+        border-radius: 11px 0px 0px 13px;
+        cursor: pointer;
+    }
+
+    .fiexd-menu .money-list {
+        list-style: none;
+        padding: 10px 5px;
+        margin: 0
+    }
+
+        .fiexd-menu .money-list li {
+            cursor: pointer;
+            padding: 5px 3px
+        }
+
+            .fiexd-menu .money-list li a {
+                color: #FFF;
+                font-size: 40px
+            }
+
+            .fiexd-menu .money-list li.active,
+            .fiexd-menu .money-list li:hover {
+                background-color: #222
+            }
+/*end fiexd menu*/
+.mr {
+    margin-right: 15px
+}
+
+
+.form-inline {
+    margin-right: 64px;
+    margin-bottom: 8px;
+   }

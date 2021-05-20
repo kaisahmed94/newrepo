@@ -1,0 +1,1267 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NCBMAS.master.cs" Inherits="ReportsProject.NCBMAS" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Reporting Page VII</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.rtl.css" rel="stylesheet" />
+    <link href="../assets/css/light-bootstrap-dashboard.rtl.css?v=2.0.1" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/css/demo.rtl.css" rel="stylesheet" />
+</head>
+
+<body>
+  
+    <div class="wrapper">
+        <div class="sidebar" data-color="blue" data-image="../assets/img/sidebar-5.jpg">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+            <div class="sidebar-wrapper">
+                <div class="logo">
+
+                    <a href="http://www.creative-tim.com" class="simple-text logo-normal" style="align-content: center">NCB-Bank
+                    </a>
+                </div>
+                <div class="user">
+                  
+                    <div class="info " style="direction: rtl">
+                        <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                            <span>أختر المصرف
+                                <b class="caret"></b>
+                            </span>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav-link" href="Wehda/WEHDAMAIN.aspx">
+                                        
+                                        <span class="sidebar-mini">مصرف الوحدة</span>
+                                        <span class="sidebar-normal"></span>
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                                                             
+
+                                    <a class="nav-link" href="#pablo">
+                                      
+
+                                        <span class="sidebar-mini">مصرف شمال أفريقيا</span>
+                                        <span class="sidebar-normal"></span>
+
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="NCBMAIN.aspx">
+                                        
+                                        <span class="sidebar-mini">مصرف التجاري الوطني</span>
+                                        <span class="sidebar-normal"></span>
+
+                                    </a>
+
+                                </li>
+                                 <li>
+                                    <a class="nav-link" href="#pablo">
+                                       
+                                        <span class="sidebar-mini">مصرف الجمهورية</span>
+                                 <span class="sidebar-normal"></span>
+
+
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav">
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#lll">
+                            <i class="nc-icon nc-single-copy-04"></i>
+                            <p>
+                                عمليات مالية
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <div class="collapse " id="lll">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#22">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                      تقارير العمليات
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+
+
+                            
+                            
+
+                        <div class="collapse " id="22">
+                            <a class="nav-link" href="NCB-Counts-StopChick.aspx">
+                                <span class="sidebar-mini">RP1</span>
+                                <span class="sidebar-normal">تقرير عمليات ايقاف صك</span>
+                                                        </a>
+
+                            <a class="nav-link" href="MT_Success.aspx">
+                                <span class="sidebar-mini">RP2</span>
+                                <span class="sidebar-normal">تقرير  العمليات الناجحة لتحويل الأموال</span>
+                                                        </a>
+
+                            <a class="nav-link" href="MT_Faield.aspx">
+                                <span class="sidebar-mini">RP3</span>
+                                <span class="sidebar-normal">تقرير  العمليات الفاشلة لتحويل الأموال</span>
+                            </a>
+                     
+                              <a class="nav-link" href="DW_Sucsees.aspx">
+                                <span class="sidebar-mini">RP4</span>
+                                <span class="sidebar-normal">تقرير  العمليات الناجحة لشحن المحافظ</span>
+
+
+                            </a>
+                               <a class="nav-link" href="DW_Faield.aspx">
+                                <span class="sidebar-mini">RP5</span>
+                                <span class="sidebar-normal">تقرير  العمليات الفاشلة لشحن المحافظ</span>
+
+
+                            </a>
+                             <a class="nav-link" href="ES_Success.aspx">
+                                <span class="sidebar-mini">RP6</span>
+                                <span class="sidebar-normal">تقرير  العمليات الناجحة لكشاف الحساب عبر البريد</span>
+
+
+                            </a>
+                              <a class="nav-link" href="ES_Faield.aspx">
+                                <span class="sidebar-mini">RP7</span>
+                                <span class="sidebar-normal">تقرير  العمليات الفاشلة لكشف الحساب عبر البريد</span>
+                            </a>
+                            <a class="nav-link" href="KA_cir_NCB.aspx">
+                                <span class="sidebar-mini">RP8</span>
+                                <span class="sidebar-normal">تقرير  العمليات الناجحة لطلب افادة عبر البريد</span>
+                            </a>
+                            <a class="nav-link" href="KA_cir_Faield_NCB.aspx">
+                                <span class="sidebar-mini">RP8</span>
+                                <span class="sidebar-normal">تقرير  العمليات الفاشلة لطلب افادة عبر البريد</span>
+                            </a>
+
+                            
+                              <a class="nav-link" href="BV_sucsees.aspx">
+                                <span class="sidebar-mini">RP8</span>
+                                <span class="sidebar-normal">تقرير  العمليات الناجحة لشراء الكروت</span>
+
+
+                            </a>
+                               <a class="nav-link" href="BV_Faield.aspx">
+                                <span class="sidebar-mini">RP9</span>
+                                <span class="sidebar-normal">تقرير  العمليات الفاشلة لشراء الكروت</span>
+
+
+                            </a>
+                             <a class="nav-link" href="PP_Faield.aspx">
+                                <span class="sidebar-mini">RP10</span>
+                                <span class="sidebar-normal">تقرير  العمليات الفاشلة لدفع الفواتير</span>
+
+
+
+                            </a>
+                              <a class="nav-link" href="PP_Succees.aspx">
+                                <span class="sidebar-mini">RP11</span>
+                                <span class="sidebar-normal">تقرير  العمليات الناجحة لدفع الفواتير</span>
+
+
+
+                            </a>
+
+                                    <a class="nav-link" href="Sdad_Faield.aspx">
+                                <span class="sidebar-mini">RP12</span>
+                                <span class="sidebar-normal">العمليات المرفوضة من مزود الخدمة "سداد"</span>
+                            </a>
+
+                               <a class="nav-link" href="Tdawel_faield.aspx">
+                                <span class="sidebar-mini">RP13</span>
+                                <span class="sidebar-normal">العمليات المرفوضة من مزود الخدمة "تداول"</span>
+                            </a>
+                        </div>
+
+
+     <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#935">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                            تقارير الاجماليات
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+
+
+
+
+                      <div class="collapse " id="935">
+
+                                                  <%--    <a class="nav-link" href="NCB-Counts-smsusers.aspx">
+                                <span class="sidebar-mini">RP</span>
+                                <span class="sidebar-normal">اجمالي مستخدمي الرسائل</span>
+                            </a>
+                                  <a class="nav-link" href="NCB-Counts-AutoSms.aspx">
+                                <span class="sidebar-mini">RP</span>
+                                <span class="sidebar-normal"> اجمالي الرسائل التلقائية</span>
+                            </a>--%>
+
+                                                         <a class="nav-link" href="Tejari_card_mazal.aspx">
+                                <span class="sidebar-mini">RP14</span>
+                                <span class="sidebar-normal">متبقي الكروت بالمخزون لكل الفئات</span>
+                            </a>
+                           <a class="nav-link" href="KA_PB_Count.aspx">
+                                <span class="sidebar-mini">RP15</span>
+                                <span class="sidebar-normal">اجمالي العمليات  د.فواتير</span>
+                            </a>
+                           <a class="nav-link" href="NCB-Count-FaildBP.aspx">
+                                <span class="sidebar-mini">RP16</span>
+                                <span class="sidebar-normal">اجمالي العمليات الفاشلة د.فواتير لكل فرع</span>
+                            </a>
+
+                            <a class="nav-link" href="NCB-Count-SucssesPP.aspx">
+                                <span class="sidebar-mini">RP17</span>
+                                <span class="sidebar-normal">اجمالي العمليات الناجحة د.فواتير لكل فرع</span>
+                            </a>
+                           <a class="nav-link" href="KA_BV_Count.aspx">
+                                <span class="sidebar-mini">RP18</span>
+                                <span class="sidebar-normal">اجمالي العمليات  للكروت</span>
+                                 </a>
+                           <a class="nav-link" href="NCB-Count-FaildCards.aspx">
+                                <span class="sidebar-mini">RP19</span>
+                                <span class="sidebar-normal">اجمالي العمليات الفاشلة للكروت لكل فرع</span>
+                            </a>
+
+                            <a class="nav-link" href="NCB-Count-SucssesCards.aspx">
+                                <span class="sidebar-mini">RP20</span>
+                                <span class="sidebar-normal">اجمالي العمليات الناجحة للكروت لكل فرع</span>
+                            </a>
+                                  <a class="nav-link" href="KA_Dw_Count.aspx">
+                                <span class="sidebar-mini">RP21</span>
+                                <span class="sidebar-normal">اجمالي العمليات  لشحن لمحافظ</span>
+                                        </a>
+                           <a class="nav-link" href="NCB-Count-FaildDW.aspx">
+                                <span class="sidebar-mini">RP22</span>
+                                <span class="sidebar-normal">اجمالي العمليات الفاشلة لشحن المحافظ لكل فرع</span>
+                            </a>
+
+                           <a class="nav-link" href="NCB-Count-SucssesDW.aspx">
+                                <span class="sidebar-mini">RP23</span>
+                                <span class="sidebar-normal">اجمالي العمليات الناجحة لشحن المحافظ لكل فرع</span>
+                            </a>
+                                       <a class="nav-link" href="KA_ES_Count.aspx">
+                                <span class="sidebar-mini">RP24</span>
+                                <span class="sidebar-normal">اجمالي العمليات  لكشف الحساب علي الايميل</span>
+                                             </a>
+                           <a class="nav-link" href="NCB-Count-FaildES.aspx">
+                                <span class="sidebar-mini">RP25</span>
+                                <span class="sidebar-normal">اجمالي العمليات الفاشلة لكشف الحساب ع.الايميل لكل فرع</span>
+                            </a>
+
+                           <a class="nav-link" href="NCB-Count-SucssesES.aspx">
+                                <span class="sidebar-mini">RP26</span>
+                                <span class="sidebar-normal">اجمالي العمليات الناجحة لكشف الحساب ع.الايميل لكل فرع</span>
+                            </a>
+                                           
+                                       <a class="nav-link" href="KA_MT_Count.aspx">
+                                <span class="sidebar-mini">RP27</span>
+                                <span class="sidebar-normal">اجمالي العمليات  لتحويل الأموال</span>
+                                             </a>
+                            <a class="nav-link" href="NCB-Count-FaildMT.aspx">
+                                <span class="sidebar-mini">RP28</span>
+                                <span class="sidebar-normal">اجمالي العمليات الفاشلة لتحويل الأموال لكل فرع</span>
+                            </a>
+                            <a class="nav-link" href="NCB-Count-SucssesMT.aspx">
+                                <span class="sidebar-mini">RP29</span>
+                                <span class="sidebar-normal">اجمالي العمليات الناجحة لتحويل الأموال لكل فرع</span>
+                            </a>
+
+
+                             <%--<a class="nav-link" href="NCB-Counts-StopChick.aspx">
+                                <span class="sidebar-mini">RP</span>
+                                <span class="sidebar-normal">اجمالي عمليات ايقاف صك</span>
+                            </a>--%>
+
+                              <a class="nav-link" href="PP_C_S.aspx">
+                                <span class="sidebar-mini">RP30</span>
+                                <span class="sidebar-normal">اجمالي القيم المالية لدفع الفواتير</span>
+                            </a>
+                           <a class="nav-link" href="BV_C_S.aspx">
+                                <span class="sidebar-mini">RP31</span>
+                                <span class="sidebar-normal">اجمالي القيم المالية لشراء الكروت</span>
+                            </a>
+                           <a class="nav-link" href="MT_C_S.aspx">
+                                <span class="sidebar-mini">RP32</span>
+                                <span class="sidebar-normal">اجمالي القيم المالية لتحويل الأموال</span>
+                            </a>
+                          <%-- <a class="nav-link" href="Es_C_S.aspx">
+                                <span class="sidebar-mini">RP33</span>
+                                <span class="sidebar-normal">اجمالي القيم المالية للكشف الحساب</span>
+                            </a>--%>
+                             <a class="nav-link" href="DW_SD_C_S.aspx">
+                                <span class="sidebar-mini">RP34</span>
+                                <span class="sidebar-normal">اجمالي القيم المالية لشحن محافظ سداد</span>
+                            </a>
+                           <a class="nav-link" href="DW_td_C_S.aspx">
+                                <span class="sidebar-mini">RP35</span>
+                                <span class="sidebar-normal">اجمالي القيم المالية لشحن محافظ تداول</span>
+                            </a>
+                            <a class="nav-link" href="CARDS_SUM_PER_COMPANY.aspx">
+                                <span class="sidebar-mini">RP36</span>
+                                <span class="sidebar-normal">إجمالي مبيعات الكروت حسب الفئة والشركة </span>
+                            </a>
+
+                            <a class="nav-link" href="CARDS_SUM.aspx">
+                                <span class="sidebar-mini">RP37</span>
+                                <span class="sidebar-normal">إجمالي مبيعات الكروت والعمليات  لكل فرع حسب الشركة</span>
+                            </a>
+                           <a class="nav-link" href="Custemors_active_FinacialTran_perBranch.aspx">
+                                <span class="sidebar-mini">RP38</span>
+                                <span class="sidebar-normal">إجمالي مفعلين الخدمات المالية لكل فرع </span>
+                            </a>
+                            <a class="nav-link" href="Custemors_active_servis.aspx">
+                                <span class="sidebar-mini">RP39</span>
+                                <span class="sidebar-normal">إجمالي مشتركين المفعلين الخدمات  </span>
+                            </a>
+                                   
+                                                    </div>
+                           
+                             
+
+                         <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#985">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                            تقارير البطاقات الدولية
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+                        <div class="collapse " id="985">
+
+                                                      <a class="nav-link" href="Master_allow_bayeElct.aspx">
+                                <span class="sidebar-mini">RP40</span>
+                                <span class="sidebar-normal">إجمالي عمليات تفعيل / إلغاء تفعيل E-Commerace</span>
+                            </a>
+                                  <a class="nav-link" href="master_Balance_riquest.aspx">
+                                <span class="sidebar-mini">RP41</span>
+                                <span class="sidebar-normal"> عمليات كشف الحساب للبطاقات الدولية</span>
+                            </a>
+
+                                                         <a class="nav-link" href="master_ChangePin_Sucsses_faield.aspx">
+                                <span class="sidebar-mini">RP42</span>
+                                <span class="sidebar-normal">العمليات الناجحة والفاشلة لتغير الرقم السري للبطاقات الدولية</span>
+                            </a>
+
+                           <a class="nav-link" href="master_ChangeState.aspx">
+                                <span class="sidebar-mini">RP43</span>
+                                <span class="sidebar-normal">عمليات تغيير الحالات للبطاقات الدولية</span>
+                            </a>
+
+                            <a class="nav-link" href="Master_MoneyTransfer.aspx">
+                                <span class="sidebar-mini">RP44</span>
+                                <span class="sidebar-normal">عمليات التحويل للبطاقات الدولية</span>
+                            </a>
+                              <a class="nav-link" href="Master_MT_bercard_SUM.aspx">
+                                <span class="sidebar-mini">RP45</span>
+                                <span class="sidebar-normal"> عمليات تحويل الأموال للبطاقات حسب نوع البطاقة</span>
+                            </a>
+                         <a class="nav-link" href="Master_ChangeState_Transactions.aspx">
+                                <span class="sidebar-mini">RP46</span>
+                                <span class="sidebar-normal">عمليات تغير الأرقام السرية للبطاقات ( الفاشلة / الناجحة ) </span>
+                            </a>
+
+                     
+                                                    </div>
+
+                                                                            </div>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#aa">
+                            <i class="nc-icon nc-single-copy-04"></i>
+                            <p>
+                                أفراد
+
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+
+                        <div class="collapse " id="aa">
+                            <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#2">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                            تقارير الأفراد 
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+                                                                            <div class="collapse " id="2">
+
+                            <a class="nav-link" href  = "app_users_active_per_branchs.aspx">
+                                <span class="sidebar-mini">RP47</span>
+                                <span class="sidebar-normal">المشتركين المفعلين للتطبيق لكل فرع</span>
+                            </a>
+
+                              <a class="nav-link" href  = "Custemors_Frinds.aspx">
+                                <span class="sidebar-mini">RP48</span>
+                                <span class="sidebar-normal">اجمالي الأصدقاء لكل مشترك</span>
+                            </a>
+
+                           
+
+                             <a class="nav-link" href="Cus_Not_Act_withContractNUm.aspx">
+                                <span class="sidebar-mini">RP49</span>
+                                <span class="sidebar-normal">المشتركين غير المفعلين بأرقام عقودهم</span>
+                            </a>
+                             <a class="nav-link" href="Cus_Stoped_bybank.aspx">
+                                <span class="sidebar-mini">RP50</span>
+                                <span class="sidebar-normal">المشتركين الغير مفعل من قبل المصرف</span>
+                            </a>
+                             <a class="nav-link" href="custperstate.aspx">
+                                <span class="sidebar-mini">RP51</span>
+                                <span class="sidebar-normal">المشتركين حسب الحالة</span>
+                            </a>
+                              <a class="nav-link" href="Custs_Act_MTrans.aspx">
+                                <span class="sidebar-mini">RP52</span>
+                                <span class="sidebar-normal">المشتركين المفعلين التطبيق</span>
+                            </a>
+                              <a class="nav-link" href="Custs_per_class.aspx">
+                                <span class="sidebar-mini">RP53</span>
+                                <span class="sidebar-normal">المشتركين حسب التصنيف</span>
+                            </a>
+                              <a class="nav-link" href="Custs_Per_dateTime.aspx">
+                                <span class="sidebar-mini">RP54</span>
+                                <span class="sidebar-normal">مشتركين الفروع حسب التاريخ</span>
+                            </a>
+                                                                                
+                                     <a class="nav-link" href  = "OrderSmsCount.aspx">
+                                <span class="sidebar-mini">RP55</span>
+                                <span class="sidebar-normal">اجمالي رسائل الطلبات</span>
+                            </a>
+                        <a class="nav-link" href  = "AutoSmsCount.aspx">
+                                <span class="sidebar-mini">RP56</span>
+                                <span class="sidebar-normal">اجمالي الرسائل التلقائية</span>
+                            </a>
+
+                        <a class="nav-link" href  = "SmsUserCount.aspx">
+                                <span class="sidebar-mini">RP57</span>
+                                <span class="sidebar-normal">اجمالي مستخدمي الرسائل </span>
+                            </a>
+
+      <a class="nav-link" href  = "OS_Type.aspx">
+                                <span class="sidebar-mini">RP58</span>
+                                <span class="sidebar-normal">اجمالي المستخدمين حسب نظام التشغيل</span>
+                            </a>
+
+      <a class="nav-link" href  = "Cus_no_app.aspx">
+                                <span class="sidebar-mini">RP59</span>
+                                <span class="sidebar-normal">إجمالي المشتركين غير مستخدمين التطبيق </span>
+                            </a>
+                             
+      <a class="nav-link" href  = "Sum_MassegsUsers_perRequest.aspx">
+                                <span class="sidebar-mini">RP60</span>
+                                <span class="sidebar-normal">إجمالي مستخدمي الرسائل حسب الطلب لكل فرع</span>
+                            </a>                                
+                        </div>
+
+                             
+                            
+
+
+                             <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#3">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                            تقارير الكروت 
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+                                                                                                        </div>
+
+
+
+                                            
+
+
+                                                <div class="collapse " id="3">
+
+                                                      <a class="nav-link" href="tej_limet.aspx">
+                                <span class="sidebar-mini">RP61</span>
+                                <span class="sidebar-normal">المتجاوزين للحد لشراء الكروت</span>
+                            </a>
+
+                                                         <a class="nav-link" href="Tejari_card_mazal.aspx">
+                                <span class="sidebar-mini">RP62</span>
+                                <span class="sidebar-normal">متبقي الكروت بالمخزون لكل الفئات</span>
+                            </a>
+                                                         <a class="nav-link" href  = "CARDS_SUM_PER_COMPANY.aspx">
+                                <span class="sidebar-mini">RP63</span>
+                                <span class="sidebar-normal">إجمالي مبيعات الكروت حسب الفئة والشركة</span>
+                            </a>                
+                                                    </div>
+
+
+
+                         <li class="nav-item">
+                        <a class="nav-link"
+                            data-toggle="collapse" href="#ab">
+                            <div class="font-icon-container"><i class="nc-icon nc-single-copy-04"></i> </></div>                           <p>
+                                خدمة يـــــــسر
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                                                 </li>
+
+<div class="collapse " id="ab">
+    <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#15">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                            تقارير المشتركين 
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+
+
+
+                                                        <div class="collapse " id="15">
+
+
+                          
+
+
+                            <a class="nav-link" href="NC-Mobi-custemors_per_branch.aspx">
+                                <span class="sidebar-mini">RP64</span>
+                                <span class="sidebar-normal">الاشتراكات الجديدة حسب المنطقة الجغرافية</span>
+                            </a>
+
+                                
+                           
+
+                         <a class="nav-link" href="NC-Mobi-custemors_not_benifit_from Payment.aspx">
+                                <span class="sidebar-mini">RP65</span>
+                                <span class="sidebar-normal">اجمالي عدد المشتركين  غير مغعلين لخدمة الدفع حسب كل فرع</span>
+                            </a>
+                                     
+
+                          
+                                     
+                                                                <a class="nav-link" href="NC-Mobi-custemors_not_benifie.aspx">
+                                <span class="sidebar-mini">RP66</span>
+                                <span class="sidebar-normal">اجمالي المشتركين الغير مستفدين من الخدمة</span>
+                            </a>
+
+                                <a class="nav-link" href="NC-Mobi-Must_custemors_sales.aspx">
+                                <span class="sidebar-mini">RP67</span>
+                                <span class="sidebar-normal">المشتركين  الأكثر استخداما لخدمة الدفع الالكتروني</span>
+                            </a>
+
+                                                            
+
+
+                         
+                                 </div>
+
+
+
+                             <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#30">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                            تقارير التجار 
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+
+
+
+
+
+                                                                        <div class="collapse " id="30">
+
+                                                                               <a class="nav-link" href="NC-Mobi-MerchantState.aspx">
+                                <span class="sidebar-mini">RP</span>
+                                <span class="sidebar-normal">عدد التجار لكل حالة</span>
+                            </a>
+
+                              <%-- <a class="nav-link" href="NC-Mobi-num_cust_servise.aspx">
+                                <span class="sidebar-mini">RP68</span>
+                                <span class="sidebar-normal">عدد التجار تحت كل تصنيف</span>
+                            </a>--%>
+
+                                                                              <a class="nav-link" href="NC-Mobi-mobimalpay_newSubscriptions.aspx">
+                                <span class="sidebar-mini">RP69</span>
+                                <span class="sidebar-normal">تجار الدفع الالكتروني لكل فرع </span>
+
+
+                            </a>
+
+                                                                              <a class="nav-link" href="NC-Mobi-custemors_mobicash_count.aspx">
+                                <span class="sidebar-mini">RP70</span>
+                                <span class="sidebar-normal">عدد التجار حسب التاريخ</span>
+                            </a>
+                                                                               <a class="nav-link" href="NC-Mobi-Merchants_not_benefiting_from_service.aspx">
+                                <span class="sidebar-mini">RP71</span>
+                                <span class="sidebar-normal">التجار الغير مستفيدين من الخدمة</span>
+                            </a>
+ <a class="nav-link" href="NC-Mobi-Merchant_per_city.aspx">
+                                <span class="sidebar-mini">RP72</span>
+                                <span class="sidebar-normal">اجمالي عدد التجار حسب المنطقة</span>
+                            </a>
+                                                                              <a class="nav-link" href="NC_Mobi_num_Citys.aspx">
+                                <span class="sidebar-mini">RP73</span>
+                                <span class="sidebar-normal">تقرير المدن المعرفة لخدمة الدفع</span>
+                            </a>
+                                            <a class="nav-link" href="NC-Mobi-Merchants_berBeusnisType.aspx">
+                                <span class="sidebar-mini">RP74</span>
+                                <span class="sidebar-normal">تقرير اجمالي عدد تجار حسب النشاط </span>
+                            </a>
+
+                                                                               <a class="nav-link" href="NC-Mobi-num_BeusninTypes.aspx">
+                                <span class="sidebar-mini">RP75</span>
+                                <span class="sidebar-normal">تقرير الأنشطة المعرفة لخدمة الدفع</span>
+                            </a>
+
+                                                                           <a class="nav-link" href="NC-Mobi-Merchant_per_city.aspx">
+                                <span class="sidebar-mini">RP76</span>
+                                <span class="sidebar-normal">اجمالي عدد التجار حسب المنطقة</span>
+                            </a>
+
+                          <a class="nav-link" href="NC_Mobi_num_Merchants_Pos.aspx">
+                                <span class="sidebar-mini">RP77</span>
+                                <span class="sidebar-normal">تقرير عدد نقاط البيع لكل تاجر في خدمة الدفع</span>
+                            </a>
+
+                          <a class="nav-link" href="NC_Mobi_num_Merchants_Pos_per_merchant.aspx">
+                                <span class="sidebar-mini">RP78</span>
+                                <span class="sidebar-normal">تقرير نقاط البيع المعرفة لتاجر معين</span>
+                            </a>
+
+                    <a class="nav-link" href="NC_Mobi_Hight_Merchants_Payment.aspx">
+                                <span class="sidebar-mini">RP79</span>
+                                <span class="sidebar-normal">تقرير التجار الأعلي مبيعا حسب المنطقة </span>
+                            </a>
+                        <a class="nav-link" href="NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type.aspx">
+                                <span class="sidebar-mini">RP80</span>
+                                <span class="sidebar-normal">تقرير التجار الأعلي مبيعا حسب النشاط </span>
+                            </a>
+
+<%--<a class="nav-link" href=" NC-Mobi-Merchants_Class.aspx">
+                                <span class="sidebar-mini">RP81</span>
+                                <span class="sidebar-normal">تقرير التجار الأعلي مبيعا حسب النشاط </span>
+                            </a>--%>
+
+<a class="nav-link" href="NC-Mobi-custemors_limet_per_classification.aspx">
+                                <span class="sidebar-mini">RP82</span>
+                                <span class="sidebar-normal">عدد التجار حسب التصنيف </span>
+                            </a>s
+
+                                                                            
+                                                                           
+                                                                                                             </div>
+
+
+<%--                    <div class="collapse " id="ab">--%>
+    <ul class="nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" data-toggle="collapse" href="#110">
+                                        <i class="nc-icon nc-notes"></i>
+                                        <p>
+                                            تقارير العمليات 
+                                <b class="caret"></b>
+
+                                        </p>
+                                    </a>
+                            </ul>
+                                                            <div class="collapse " id="110">
+
+     <a class="nav-link" href="NC-Mobi-Mobimal_Full.aspx">
+                                <span class="sidebar-mini">RP83</span>
+                                <span class="sidebar-normal">مبيعات الدفع الالكتروني حسب المنطقة الجغرافية</span>
+                            </a>
+
+
+
+   <a class="nav-link" href="NC-Mobi-custemors_Sum_Pay_ChargeBack.aspx">
+                                <span class="sidebar-mini">RP84</span>
+                                <span class="sidebar-normal">اجمالي عمليات الدفع و الاسترجاع</span>
+                            </a>
+
+                                                                   <a class="nav-link" href="NC-Mobi-custemors_Sum_Pay_PerCity.aspx">
+                                <span class="sidebar-mini">RP85</span>
+                                <span class="sidebar-normal">تقرير اجمالي المبيعات حسب  المنطقة</span>
+                            </a>
+
+                                                                   <a class="nav-link" href="NC_Mobi_custemors_Sum_Pay_PerMerchant.aspx">
+                                <span class="sidebar-mini">RP86</span>
+                                <span class="sidebar-normal">تقرير عن عمليات النشاط  لكل تاجر</span>
+                            </a>
+
+                                                                   <a class="nav-link" href="NC_Mobi_custemors_Sum_POSPay_PerMerchant.aspx">
+                                <span class="sidebar-mini">RP87</span>
+                                <span class="sidebar-normal">تقرير عن عمليات نقاط البيع لتاجر معين</span>
+                            </a>
+
+                                                                      <a class="nav-link" href="NC-Mobi-custemors_Pay_SumPayment_perDate.aspx">
+                                <span class="sidebar-mini">RP88</span>
+                                <span class="sidebar-normal">تقرير عن اجمالي المبيعات حسب التاريخ</span>
+                            </a>
+
+                                                                      <a class="nav-link" href="NC_Mobi_custemors_Pay_SumPayment_perBranch.aspx">
+                                <span class="sidebar-mini">RP89</span>
+                                <span class="sidebar-normal">تقرير عن عمليات نقاط البيع لكل فرع</span>
+                            </a>
+
+                                                               <%--  <a class="nav-link" href="Ncb-mobi-merr.aspx">
+                                <span class="sidebar-mini">RP90</span>
+                                <span class="sidebar-normal">صافي المبيعات لتجار حسب الفرع خلال فترة معينة </span>
+                            </a>--%>
+                                                                           <a class="nav-link" href="Ncb-mobi-Pay_All_perBranch.aspx">
+                                <span class="sidebar-mini">RP91</span>
+                                <span class="sidebar-normal"> صافي المبيعات والعمليات لكل تاجر </span>
+                            </a>
+
+                                                                <%--<a class="nav-link" href="Ncb-mobi-Pay_All.aspx">
+                                <span class="sidebar-mini">RP92</span>
+                                <span class="sidebar-normal">صافي المبيعات الكلي خلال فترة معينة </span>
+                            </a>--%>
+                                 </div>
+
+
+    
+                </div>
+
+
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#al">
+                            <i class="nc-icon nc-single-copy-04"></i>
+                            <p>
+                           تقارير أسقف الخدمات
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                                                                                                  <div class="collapse " id="al">
+  <a class="nav-link" href="NCB-LIMET-carddetales.aspx">
+                                <span class="sidebar-mini">RP91</span>
+                                <span class="sidebar-normal">أسقف الكروت</span>
+                            </a>
+
+                                                                                                      <a class="nav-link" href="NCB-LIMET-MantTrans.aspx">
+                                <span class="sidebar-mini">RP92</span>
+                                <span class="sidebar-normal">أسقف تحويل الأموال</span>
+                            </a>
+
+                                                                                                      <a class="nav-link" href="NCB-LIMET-DW.aspx">
+                                <span class="sidebar-mini">RP93</span>
+                                <span class="sidebar-normal">أسقف شحن المحافظ</span>
+                            </a>
+                                                                                                                     <a class="nav-link" href="NCB-LIMET-PP.aspx">
+                                <span class="sidebar-mini">RP94</span>
+                                <span class="sidebar-normal">أسقف دفع الفواتير</span>
+                            </a>
+
+                                                                                                      <a class="nav-link" href="NCB-LIMET-mobimalpay-Custs.aspx">
+                                <span class="sidebar-mini">RP95</span>
+                                <span class="sidebar-normal">أسقف مشتركين خدمة الدفع الالكتروني</span>
+                            </a>
+
+                                                                                                      <a class="nav-link" href="NCB-LIMET-mobimalpay-Merchants.aspx">
+                                <span class="sidebar-mini">RP96</span>
+                                <span class="sidebar-normal">أسقف تجار خدمة الدفع الالكتروني</span>
+                            </a>
+                                                                                                
+                                 </div>
+
+                          </li>
+
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <!-- Navbar -->
+            <%--     <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-minimize">
+                            <button id="minimizeSidebar" class="btn btn-warning btn-fill btn-round btn-icon d-none d-lg-block">
+                                <i class="fa fa-ellipsis-v visible-on-sidebar-regular"></i>
+                                <i class="fa fa-navicon visible-on-sidebar-mini"></i>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="#pablo"> Dashboard PRO </a>
+                    </div>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="nav navbar-nav mr-auto">
+                            <form class="navbar-form navbar-left navbar-search-form" role="search">
+                                <div class="input-group">
+                                    <i class="nc-icon nc-zoom-split"></i>
+                                    <input type="text" value="" class="form-control" placeholder="Search...">
+                                </div>
+                            </form>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="nc-icon nc-planet"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Create New Post</a>
+                                    <a class="dropdown-item" href="#">Manage Something</a>
+                                    <a class="dropdown-item" href="#">Do Nothing</a>
+                                    <a class="dropdown-item" href="#">Submit to live</a>
+                                    <li class="divider"></li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </ul>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="nc-icon nc-bell-55"></i>
+                                    <span class="notification">5</span>
+                                    <span class="d-lg-none">Notification</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Notification 1</a>
+                                    <a class="dropdown-item" href="#">Notification 2</a>
+                                    <a class="dropdown-item" href="#">Notification 3</a>
+                                    <a class="dropdown-item" href="#">Notification 4</a>
+                                    <a class="dropdown-item" href="#">Notification 5</a>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="nc-icon nc-bullet-list-67"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="nc-icon nc-email-85"></i> Messages
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="nc-icon nc-umbrella-13"></i> Help Center
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="nc-icon nc-settings-90"></i> Settings
+                                    </a>
+                                    <div class="divider"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="nc-icon nc-lock-circle-open"></i> Lock Screen
+                                    </a>
+                                    <a href="#" class="dropdown-item text-danger">
+                                        <i class="nc-icon nc-button-power"></i> Log out
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>--%>
+            <!-- End Navbar -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center icon-warning">
+                                                <i class="nc-icon nc-chart text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="numbers">
+                                                <p class="card-category">
+                                                   
+                                                    اجمالي مفعلي العمليات المالية 
+                                                </p>
+                                                <h4 class="card-title">
+                                                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                                                            </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-refresh"></i>Update Now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center icon-warning">
+                                                <i class="nc-icon nc-light-3 text-success"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="numbers">
+                                                <p class="card-category">
+                                                    
+                                                    اجمالي مستخدمين التطبيق
+
+                                                </p>
+                                                <h4 class="card-title">
+                                                    
+                                                    
+    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+
+
+ 
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-refresh"></i>Update Now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center icon-warning">
+                                                <i class="nc-icon nc-vector text-danger"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="numbers">
+                                                <p class="card-category">اجالي مستخدمين الرسائل</p>
+                                                <h4 class="card-title">         
+    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                                                    
+                                                  </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-refresh"></i>Update Now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center icon-warning">
+                                                <i class="nc-icon nc-favourite-28 text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="numbers">
+                                                <p class="card-category">اجمالي المشتركين</p>
+                                                <h4 class="card-title"> 
+    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-refresh"></i>Update Now
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%--<%--<%--<%--<%--<%--<%--<div class="row">
+                        <div class="col-md-12">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title">Global Sales by Top Locations</h4>
+                                    <p class="card-category">All products that were shipped</p>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                      
+                                          
+                                                </div>
+<%--                                                <div class="col-md-6 ml-auto mr-auto">
+                                                    <div id="worldMap" style="height: 300px;"></div>
+                                                </div>--%>
+               
+
+
+    <div class="col-md-12">
+        <asp:ContentPlaceHolder ID="head" runat="server">
+  
+        </asp:ContentPlaceHolder>
+
+
+    </div>
+
+
+
+
+
+    </div>
+                                    </div>
+                                    <footer class="footer">
+                                        <div class="container">
+                                            <nav>
+                                                <ul class="footer-menu">
+                                                    <li>
+                                                        <a href="#">Home
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Company
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Portfolio
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Blog
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <p class="copyright text-center">
+                                                    ©
+                                                    <script>
+                                                        document.write(new Date().getFullYear())
+                                                    </script>
+                                                    <a href="http://www.creative-tim.com">Massarat Company</a>, made By Technical Department
+
+                                                </p>
+                                            </nav>
+                                        </div>
+                                    </footer>
+    </div>
+                            </div>
+
+
+
+    
+<div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+        </a>
+
+        <ul class="dropdown-menu">
+			<li class="header-title"> Sidebar Style</li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Background Image</p>
+                    <label class="switch-image">
+                        <input type="checkbox" data-toggle="switch" checked="" data-on-color="info" data-off-color="info"><span class="toggle"></span>
+                    </label>
+                    <div class="cleaRPix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Sidebar Mini</p>
+                    <label class="switch-mini">
+                        <input type="checkbox" data-toggle="switch" data-on-color="info" data-off-color="info">
+                        <span class="toggle"></span>
+                    </label>
+                    <div class="cleaRPix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger">
+                    <p>Fixed Navbar</p>
+                    <label class="switch-nav">
+                        <input type="checkbox" data-toggle="switch" data-on-color="info" data-off-color="info">
+                        <span class="toggle"></span>
+                    </label>
+                    <div class="cleaRPix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <p>Filters</p>
+                    <div class="pull-right">
+                        <span class="badge filter badge-black" data-color="black"></span>
+                        <span class="badge filter badge-azure" data-color="azure"></span>
+                        <span class="badge filter badge-green" data-color="green"></span>
+                        <span class="badge filter badge-orange active" data-color="orange"></span>
+                        <span class="badge filter badge-red" data-color="red"></span>
+                        <span class="badge filter badge-purple" data-color="purple"></span>
+                    </div>
+                    <div class="cleaRPix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Images</li>
+
+            <li class="active">
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-1.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-3.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-4.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img src="../assets/img/sidebar-5.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="button-container">
+                <div>
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard" target="_blank" class="btn btn-info btn-block">Get free demo!</a>
+                </div>
+            </li>
+
+            <li class="button-container">
+                <div>
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank" class="btn btn-warning btn-block btn-fill">Buy now!</a>
+                </div>
+            </li>
+
+            <li class="button-container">
+                <div>
+                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro/documentation/tutorial-components.html" target="_blank" class="btn btn-danger btn-block">Documentation</a>
+                </div>
+            </li>
+
+            <li class="header-title" id="sharrreTitle">Thank you for sharing!</li>
+
+            <li class="button-container">
+				<button id="twitter" class="btn btn-social btn-twitter btn-round sharrre"><i class="fa fa-twitter"></i> · 256</button>
+                <button id="facebook" class="btn btn-social btn-facebook btn-round sharrre"><i class="fa fa-facebook-square"> · 426</i></button>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?YOUR_KEY_HERE"></script>
+<!--  Chartist Plugin  -->
+<script src="../assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!--  jVector Map  -->
+<script src="../assets/js/plugins/jquery-jvectormap.js" type="text/javascript"></script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="../assets/js/plugins/moment.min.js"></script>
+<!--  DatetimePicker   -->
+<script src="../assets/js/plugins/bootstrap-datetimepicker.js"></script>
+<!--  Sweet Alert  -->
+<script src="../assets/js/plugins/sweetalert2.min.js" type="text/javascript"></script>
+<!--  Tags Input  -->
+<script src="../assets/js/plugins/bootstrap-tagsinput.js" type="text/javascript"></script>
+<!--  Sliders  -->
+<script src="../assets/js/plugins/nouislider.js" type="text/javascript"></script>
+<!--  Bootstrap Select  -->
+<script src="../assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+<!--  jQueryValidate  -->
+<script src="../assets/js/plugins/jquery.validate.min.js" type="text/javascript"></script>
+<!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+<script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+<!--  Bootstrap Table Plugin -->
+<script src="../assets/js/plugins/bootstrap-table.js"></script>
+<!--  DataTable Plugin -->
+<script src="../assets/js/plugins/jquery.dataTables.min.js"></script>
+<!--  Full Calendar   -->
+<script src="../assets/js/plugins/fullcalendar.min.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.1" type="text/javascript"></script>
+<!-- Light Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/js/demo.js"></script>
+    <script src="../../assets/js/light-bootstrap-dashboard.js?v=1.4.1"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+        demo.showNotification();
+
+        demo.initVectorMap();
+        demo.x();
+    }
+ 
+
+
+    );
+    //function xnn() {
+
+    //    document.write("5")
+    //}
+</script>
+
+</html>

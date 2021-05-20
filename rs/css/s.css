@@ -1,0 +1,38 @@
+﻿
+
+.container {
+    margin-top: 40px;
+    padding-top: 20px;
+    /*background-color: #beb*/
+}
+
+.vertical {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+
+.vertical {
+    box-shadow: inset 0px 4px 6px #ccc;
+}
+
+.progress-bar {
+    box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+}
+
+
+img{
+    float:right
+}
+.table1 {
+    float: left;
+    margin-top 50% !important;
+    margin-left: 250px
+}
+.upper-bar {
+    background-image: linear-gradient(to right, #0b85a9f5,#1dc185);
+    background-image: -moz-linear-gradient(left, #0b85a9f5, #1dc185);
+    background: linear-gradient(to right,rgba(11, 133, 169, 0.96) 10%, rgba(29, 193, 133, 1) 60%);
+}

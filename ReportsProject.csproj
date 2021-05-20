@@ -1,0 +1,1919 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Test\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\Test\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{330577E1-F2E0-474D-B340-97D5EC784C6E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportsProject</RootNamespace>
+    <AssemblyName>ReportsProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44313</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <LegacyPublishPropertiesPageEnabled>true</LegacyPublishPropertiesPageEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Test\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Downloads\newtonsoft.json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app_users_active_per_branchs.aspx" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\bootstrap.min.rtl.css" />
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\demo.rtl.css" />
+    <Content Include="assets\css\documentation.css" />
+    <Content Include="assets\css\light-bootstrap-dashboard.css" />
+    <Content Include="assets\css\light-bootstrap-dashboard.rtl.css" />
+    <Content Include="assets\fonts\nucleo-icons.svg" />
+    <Content Include="assets\img\apple-icon.png" />
+    <Content Include="assets\img\bg11.jpg" />
+    <Content Include="assets\img\bg4.jpg" />
+    <Content Include="assets\img\bg5.jpg" />
+    <Content Include="assets\img\bg6.jpg" />
+    <Content Include="assets\img\bg7.jpg" />
+    <Content Include="assets\img\bg8.jpg" />
+    <Content Include="assets\img\blog-1.jpg" />
+    <Content Include="assets\img\blog-2.jpg" />
+    <Content Include="assets\img\blog-3.jpg" />
+    <Content Include="assets\img\blog-4.jpg" />
+    <Content Include="assets\img\blog-5.jpg" />
+    <Content Include="assets\img\carousel_1.jpg" />
+    <Content Include="assets\img\carousel_2.jpg" />
+    <Content Include="assets\img\carousel_3.jpg" />
+    <Content Include="assets\img\default-avatar.png" />
+    <Content Include="assets\img\faces\face-0.jpg" />
+    <Content Include="assets\img\faces\face-1.jpg" />
+    <Content Include="assets\img\faces\face-2.jpg" />
+    <Content Include="assets\img\faces\face-3.jpg" />
+    <Content Include="assets\img\faces\face-4.jpg" />
+    <Content Include="assets\img\faces\face-5.jpg" />
+    <Content Include="assets\img\faces\face-6.jpg" />
+    <Content Include="assets\img\faces\face-7.jpg" />
+    <Content Include="assets\img\faces\margot.jpg" />
+    <Content Include="assets\img\faces\tim_vector.jpe" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="assets\img\flags\AD.png" />
+    <Content Include="assets\img\flags\AE.png" />
+    <Content Include="assets\img\flags\AG.png" />
+    <Content Include="assets\img\flags\AM.png" />
+    <Content Include="assets\img\flags\AR.png" />
+    <Content Include="assets\img\flags\AT.png" />
+    <Content Include="assets\img\flags\AU.png" />
+    <Content Include="assets\img\flags\BE.png" />
+    <Content Include="assets\img\flags\BF.png" />
+    <Content Include="assets\img\flags\BG.png" />
+    <Content Include="assets\img\flags\BO.png" />
+    <Content Include="assets\img\flags\BR.png" />
+    <Content Include="assets\img\flags\CA.png" />
+    <Content Include="assets\img\flags\CD.png" />
+    <Content Include="assets\img\flags\CG.png" />
+    <Content Include="assets\img\flags\CH.png" />
+    <Content Include="assets\img\flags\CL.png" />
+    <Content Include="assets\img\flags\CM.png" />
+    <Content Include="assets\img\flags\CN.png" />
+    <Content Include="assets\img\flags\CO.png" />
+    <Content Include="assets\img\flags\CZ.png" />
+    <Content Include="assets\img\flags\DE.png" />
+    <Content Include="assets\img\flags\DJ.png" />
+    <Content Include="assets\img\flags\DK.png" />
+    <Content Include="assets\img\flags\DZ.png" />
+    <Content Include="assets\img\flags\EE.png" />
+    <Content Include="assets\img\flags\EG.png" />
+    <Content Include="assets\img\flags\ES.png" />
+    <Content Include="assets\img\flags\FI.png" />
+    <Content Include="assets\img\flags\FR.png" />
+    <Content Include="assets\img\flags\GA.png" />
+    <Content Include="assets\img\flags\GB.png" />
+    <Content Include="assets\img\flags\GM.png" />
+    <Content Include="assets\img\flags\GT.png" />
+    <Content Include="assets\img\flags\HN.png" />
+    <Content Include="assets\img\flags\HT.png" />
+    <Content Include="assets\img\flags\HU.png" />
+    <Content Include="assets\img\flags\ID.png" />
+    <Content Include="assets\img\flags\IE.png" />
+    <Content Include="assets\img\flags\IL.png" />
+    <Content Include="assets\img\flags\IN.png" />
+    <Content Include="assets\img\flags\IQ.png" />
+    <Content Include="assets\img\flags\IR.png" />
+    <Content Include="assets\img\flags\IT.png" />
+    <Content Include="assets\img\flags\JM.png" />
+    <Content Include="assets\img\flags\JO.png" />
+    <Content Include="assets\img\flags\JP.png" />
+    <Content Include="assets\img\flags\KG.png" />
+    <Content Include="assets\img\flags\KN.png" />
+    <Content Include="assets\img\flags\KP.png" />
+    <Content Include="assets\img\flags\KR.png" />
+    <Content Include="assets\img\flags\KW.png" />
+    <Content Include="assets\img\flags\KZ.png" />
+    <Content Include="assets\img\flags\LA.png" />
+    <Content Include="assets\img\flags\LB.png" />
+    <Content Include="assets\img\flags\LC.png" />
+    <Content Include="assets\img\flags\LS.png" />
+    <Content Include="assets\img\flags\LU.png" />
+    <Content Include="assets\img\flags\LV.png" />
+    <Content Include="assets\img\flags\MG.png" />
+    <Content Include="assets\img\flags\MK.png" />
+    <Content Include="assets\img\flags\ML.png" />
+    <Content Include="assets\img\flags\MM.png" />
+    <Content Include="assets\img\flags\MT.png" />
+    <Content Include="assets\img\flags\MX.png" />
+    <Content Include="assets\img\flags\NA.png" />
+    <Content Include="assets\img\flags\NE.png" />
+    <Content Include="assets\img\flags\NG.png" />
+    <Content Include="assets\img\flags\NI.png" />
+    <Content Include="assets\img\flags\NL.png" />
+    <Content Include="assets\img\flags\NO.png" />
+    <Content Include="assets\img\flags\OM.png" />
+    <Content Include="assets\img\flags\PA.png" />
+    <Content Include="assets\img\flags\PE.png" />
+    <Content Include="assets\img\flags\PG.png" />
+    <Content Include="assets\img\flags\PK.png" />
+    <Content Include="assets\img\flags\PL.png" />
+    <Content Include="assets\img\flags\PT.png" />
+    <Content Include="assets\img\flags\PY.png" />
+    <Content Include="assets\img\flags\QA.png" />
+    <Content Include="assets\img\flags\RO.png" />
+    <Content Include="assets\img\flags\RU.png" />
+    <Content Include="assets\img\flags\RW.png" />
+    <Content Include="assets\img\flags\SA.png" />
+    <Content Include="assets\img\flags\SE.png" />
+    <Content Include="assets\img\flags\SG.png" />
+    <Content Include="assets\img\flags\SL.png" />
+    <Content Include="assets\img\flags\SN.png" />
+    <Content Include="assets\img\flags\SO.png" />
+    <Content Include="assets\img\flags\SV.png" />
+    <Content Include="assets\img\flags\TD.png" />
+    <Content Include="assets\img\flags\TJ.png" />
+    <Content Include="assets\img\flags\TL.png" />
+    <Content Include="assets\img\flags\TR.png" />
+    <Content Include="assets\img\flags\TZ.png" />
+    <Content Include="assets\img\flags\UA.png" />
+    <Content Include="assets\img\flags\US.png" />
+    <Content Include="assets\img\flags\VE.png" />
+    <Content Include="assets\img\flags\VN.png" />
+    <Content Include="assets\img\flags\YE.png" />
+    <Content Include="assets\img\full-screen-image-1.jpg" />
+    <Content Include="assets\img\full-screen-image-2.jpg" />
+    <Content Include="assets\img\full-screen-image-3.jpg" />
+    <Content Include="assets\img\full-screen-image-4.jpg" />
+    <Content Include="assets\img\loading-bubbles.svg" />
+    <Content Include="assets\img\margot.jpg" />
+    <Content Include="assets\img\mask.png" />
+    <Content Include="assets\img\new_logo.png" />
+    <Content Include="assets\img\sidebar-1.jpg" />
+    <Content Include="assets\img\sidebar-2.jpg" />
+    <Content Include="assets\img\sidebar-3.jpg" />
+    <Content Include="assets\img\sidebar-4.jpg" />
+    <Content Include="assets\img\sidebar-5.jpg" />
+    <Content Include="assets\img\tim_80x80.png" />
+    <Content Include="assets\img\viber_image_2021-02-04_14-47-39.jpg" />
+    <Content Include="assets\js\core\bootstrap.min.js" />
+    <Content Include="assets\js\core\jquery.3.2.1.min.js" />
+    <Content Include="assets\js\core\popper.min.js" />
+    <Content Include="assets\js\demo.js" />
+    <Content Include="assets\js\light-bootstrap-dashboard.js" />
+    <Content Include="assets\js\plugins\bootstrap-datetimepicker.js" />
+    <Content Include="assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="assets\js\plugins\bootstrap-switch.js" />
+    <Content Include="assets\js\plugins\bootstrap-table.js" />
+    <Content Include="assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="assets\js\plugins\chartist.min.js" />
+    <Content Include="assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="assets\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="assets\js\plugins\moment.min.js" />
+    <Content Include="assets\js\plugins\nouislider.js" />
+    <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="assets\js\plugins\sweetalert2.min.js" />
+    <Content Include="AutoSmsCount.aspx" />
+    <Content Include="BV_C_S.aspx" />
+    <Content Include="CARDS_SUM.aspx" />
+    <Content Include="CARDS_SUM_PER_COMPANY.aspx" />
+    <Content Include="Custemors_active_FinacialTran_perBranch.aspx" />
+    <Content Include="Custemors_active_servis.aspx" />
+    <Content Include="Custemors_Frinds.aspx" />
+    <Content Include="Cus_no_app.aspx" />
+    <Content Include="DW_SD_C_S.aspx" />
+    <Content Include="DW_td_C_S.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="KA_BV_Count.aspx" />
+    <Content Include="KA_cir_Faield_NCB.aspx" />
+    <Content Include="KA_cir_NCB.aspx" />
+    <Content Include="KA_Dw_Count.aspx" />
+    <Content Include="KA_ES_Count.aspx" />
+    <Content Include="KA_MT_Count.aspx" />
+    <Content Include="KA_PB_Count.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Master_allow_bayeElct.aspx" />
+    <Content Include="master_Balance_riquest.aspx" />
+    <Content Include="master_ChangePin_Sucsses_faield.aspx" />
+    <Content Include="master_ChangeState.aspx" />
+    <Content Include="Master_ChangeState_Transactions.aspx" />
+    <Content Include="Master_MoneyTransfer.aspx" />
+    <Content Include="Master_MT_bercard_SUM.aspx" />
+    <Content Include="MT_C_S.aspx" />
+    <Content Include="NC-Mobi-custemors_limet_per_classification.aspx" />
+    <Content Include="NC-Mobi-custemors_not_benifie.aspx" />
+    <Content Include="NC-Mobi-custemors_not_benifit_from Payment.aspx" />
+    <Content Include="NC-Mobi-custemors_Pay_SumPayment_perDate.aspx" />
+    <Content Include="NC-Mobi-custemors_per_branch.aspx" />
+    <Content Include="NC-Mobi-custemors_Sum_Pay_ChargeBack.aspx" />
+    <Content Include="NC-Mobi-custemors_Sum_Pay_PerCity.aspx" />
+    <Content Include="NC-Mobi-MerchantState.aspx" />
+    <Content Include="NC-Mobi-Merchants_berBeusnisType.aspx" />
+    <Content Include="NC-Mobi-Merchants_Class.aspx" />
+    <Content Include="NC-Mobi-Merchant_per_city.aspx" />
+    <Content Include="NC-Mobi-Must_custemors_sales.aspx" />
+    <Content Include="NC-Mobi-num_BeusninTypes.aspx" />
+    <Content Include="NCB-Count-FaildBP.aspx" />
+    <Content Include="NCB-Count-FaildCards.aspx" />
+    <Content Include="NCB-Count-FaildDW.aspx" />
+    <Content Include="NCB-Count-FaildES.aspx" />
+    <Content Include="NCB-Count-FaildMT.aspx" />
+    <Content Include="NCB-Count-SucssesCards.aspx" />
+    <Content Include="NCB-Count-SucssesDW.aspx" />
+    <Content Include="NCB-Count-SucssesES.aspx" />
+    <Content Include="NCB-Count-SucssesMT.aspx" />
+    <Content Include="NCB-Count-SucssesPP.aspx" />
+    <Content Include="NCB-Counts-AutoSms.aspx" />
+    <Content Include="NCB-Counts-smsusers.aspx" />
+    <Content Include="NCB-Counts-StopChick.aspx" />
+    <Content Include="NCB-LIMET-carddetales.aspx" />
+    <Content Include="NCB-LIMET-DW.aspx" />
+    <Content Include="NCB-LIMET-MantTrans.aspx" />
+    <Content Include="NCB-LIMET-mobimalpay-Custs.aspx" />
+    <Content Include="NCB-LIMET-mobimalpay-Merchants.aspx" />
+    <Content Include="NCB-LIMET-PP.aspx" />
+    <Content Include="Ncb-mobi-merr.aspx" />
+    <Content Include="Ncb-mobi-Pay_All.aspx" />
+    <Content Include="Ncb-mobi-Pay_All_perBranch.aspx" />
+    <Content Include="NCBMAIN.aspx" />
+    <Content Include="NC_Mobi_custemors_Pay_SumPayment_perBranch.aspx" />
+    <Content Include="NC_Mobi_custemors_Sum_Pay_PerMerchant.aspx" />
+    <Content Include="NC_Mobi_custemors_Sum_POSPay_PerMerchant.aspx" />
+    <Content Include="NC_Mobi_Hight_Merchants_Payment.aspx" />
+    <Content Include="NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type.aspx" />
+    <Content Include="NC_Mobi_num_Citys.aspx" />
+    <Content Include="NC_Mobi_num_Merchants_Pos.aspx" />
+    <Content Include="NC_Mobi_num_Merchants_Pos_per_merchant.aspx" />
+    <Content Include="OrderSmsCount.aspx" />
+    <Content Include="custemors_per_branch.aspx" />
+    <Content Include="BV_Faield.aspx" />
+    <Content Include="BV_sucsees.aspx" />
+    <Content Include="NC-Mobi-custemors_mobicash_count.aspx" />
+    <Content Include="Cus_Stoped_bybank.aspx" />
+    <Content Include="DW_Faield.aspx" />
+    <Content Include="DW_Sucsees.aspx" />
+    <Content Include="ES_Faield.aspx" />
+    <Content Include="ES_Success.aspx" />
+    <Content Include="custperstate.aspx" />
+    <Content Include="Custs_Act_MTrans.aspx" />
+    <Content Include="Custs_per_class.aspx" />
+    <Content Include="Custs_Per_dateTime.aspx" />
+    <Content Include="Cus_Not_Act_withContractNUm.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="login2.aspx" />
+    <Content Include="NC-Mobi-Merchants_not_benefiting_from_service.aspx" />
+    <Content Include="NC-Mobi-mobimalpay_newSubscriptions.aspx" />
+    <Content Include="MT_Faield.aspx" />
+    <Content Include="MT_Success.aspx" />
+    <Content Include="NC-Mobi-num_cust_servise.aspx" />
+    <Content Include="OS_Type.aspx" />
+    <Content Include="Pos_transaction_per_merchant.aspx" />
+    <Content Include="PP_C_S.aspx" />
+    <Content Include="PP_Succees.aspx" />
+    <Content Include="RP_Cus_notact.aspx" />
+    <Content Include="Sdad_Faield.aspx" />
+    <Content Include="SmsUserCount.aspx" />
+    <Content Include="Sum_MassegsUsers_perRequest.aspx" />
+    <Content Include="Tdawel_faield.aspx" />
+    <Content Include="Tejari_card_mazal.aspx" />
+    <Content Include="tej_limet.aspx" />
+    <Content Include="transfer.html" />
+    <Content Include="Web.config" />
+    <Content Include="NCB.aspx" />
+    <Content Include="PP_Faield.aspx" />
+    <Content Include="NC-Mobi-Mobimal_Full.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="Wehda\app_users_active_per_branchs_W.aspx" />
+    <Content Include="Wehda\AutoSmsCount_W.aspx" />
+    <Content Include="Wehda\BV_C_S_W.aspx" />
+    <Content Include="Wehda\BV_Faield_W.aspx" />
+    <Content Include="Wehda\BV_sucsees_W.aspx" />
+    <Content Include="Wehda\CARDS_SUM_W.aspx" />
+    <Content Include="Wehda\CARDS_SUM_PER_COMPANY_W.aspx" />
+    <Content Include="Wehda\Custemors_active_FinacialTran_perBranch_W.aspx" />
+    <Content Include="Wehda\Custemors_active_servis_W.aspx" />
+    <Content Include="Wehda\Custemors_Frinds_W.aspx" />
+    <Content Include="Wehda\custemors_per_branch_W.aspx" />
+    <Content Include="Wehda\custperstate_W.aspx" />
+    <Content Include="Wehda\Custs_Act_MTrans_W.aspx" />
+    <Content Include="Wehda\Custs_per_class_W.aspx" />
+    <Content Include="Wehda\Custs_Per_dateTime_W.aspx" />
+    <Content Include="Wehda\Cus_Not_Act_withContractNUm_W.aspx" />
+    <Content Include="Wehda\Cus_no_app_W.aspx" />
+    <Content Include="Wehda\Cus_Stoped_bybank_W.aspx" />
+    <Content Include="Wehda\ES_Faield_W.aspx" />
+    <Content Include="Wehda\ES_Success_W.aspx" />
+    <Content Include="Wehda\KA_BV_Count_W.aspx" />
+    <Content Include="Wehda\KA_ES_Count_W.aspx" />
+    <Content Include="Wehda\KA_MT_Count_W.aspx" />
+    <Content Include="Wehda\MT_C_S_W.aspx" />
+    <Content Include="Wehda\MT_Faield_W.aspx" />
+    <Content Include="Wehda\MT_Success_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_limet_per_classification_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_mobicash_count_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_not_benifie_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_not_benifit_from Payment_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_Pay_SumPayment_perDate_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_per_branch_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_Sum_Pay_ChargeBack_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-custemors_Sum_Pay_PerCity_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-MerchantState_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-Merchants_berBeusnisType_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-Merchants_Class_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-Merchants_not_benefiting_from_service_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-Merchant_per_city_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-mobimalpay_newSubscriptions_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-Mobimal_Full_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-Must_custemors_sales_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-num_BeusninTypes_W.aspx" />
+    <Content Include="Wehda\NC-Mobi-num_cust_servise_W.aspx" />
+    <Content Include="Wehda\NCB-Count-FaildCards_W.aspx" />
+    <Content Include="Wehda\NCB-Count-FaildES_W.aspx" />
+    <Content Include="Wehda\NCB-Count-FaildMT_W.aspx" />
+    <Content Include="Wehda\NCB-Count-SucssesCards_W.aspx" />
+    <Content Include="Wehda\NCB-Count-SucssesES_W.aspx" />
+    <Content Include="Wehda\NCB-Count-SucssesMT_W.aspx" />
+    <Content Include="Wehda\NCB-Counts-AutoSms_W.aspx" />
+    <Content Include="Wehda\NCB-Counts-smsusers_W.aspx" />
+    <Content Include="Wehda\NCB-LIMET-carddetales_W.aspx" />
+    <Content Include="Wehda\NCB-LIMET-MantTrans_W.aspx" />
+    <Content Include="Wehda\NCB-LIMET-mobimalpay-Custs_W.aspx" />
+    <Content Include="Wehda\NCB-LIMET-mobimalpay-Merchants_W.aspx" />
+    <Content Include="Wehda\Ncb-mobi-merr_W.aspx" />
+    <Content Include="Wehda\Ncb-mobi-Pay_All_perBranch_W.aspx" />
+    <Content Include="Wehda\Ncb-mobi-Pay_All_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_custemors_Pay_SumPayment_perBranch_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_custemors_Sum_Pay_PerMerchant_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_custemors_Sum_POSPay_PerMerchant_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_Hight_Merchants_Payment_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_num_Citys_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_num_Merchants_Pos_W.aspx" />
+    <Content Include="Wehda\NC_Mobi_num_Merchants_Pos_per_merchant.aspx" />
+    <Content Include="Wehda\OrderSmsCount_W.aspx" />
+    <Content Include="Wehda\OS_Type_W.aspx" />
+    <Content Include="Wehda\Pos_transaction_per_merchant_W.aspx" />
+    <Content Include="Wehda\RP_Cus_notact_W.aspx" />
+    <Content Include="Wehda\SmsUserCount_W.aspx" />
+    <Content Include="Wehda\Sum_MassegsUsers_perRequest_W.aspx" />
+    <Content Include="Wehda\Tejari_card_mazal_W.aspx" />
+    <Content Include="Wehda\tej_limet_W.aspx" />
+    <Content Include="Wehda\WebForm1.aspx" />
+    <Content Include="Wehda\WEHDAMAIN.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app_users_active_per_branchs.aspx.cs">
+      <DependentUpon>app_users_active_per_branchs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app_users_active_per_branchs.aspx.designer.cs">
+      <DependentUpon>app_users_active_per_branchs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoSmsCount.aspx.cs">
+      <DependentUpon>AutoSmsCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoSmsCount.aspx.designer.cs">
+      <DependentUpon>AutoSmsCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BV_C_S.aspx.cs">
+      <DependentUpon>BV_C_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BV_C_S.aspx.designer.cs">
+      <DependentUpon>BV_C_S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARDS_SUM.aspx.cs">
+      <DependentUpon>CARDS_SUM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARDS_SUM.aspx.designer.cs">
+      <DependentUpon>CARDS_SUM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARDS_SUM_PER_COMPANY.aspx.cs">
+      <DependentUpon>CARDS_SUM_PER_COMPANY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARDS_SUM_PER_COMPANY.aspx.designer.cs">
+      <DependentUpon>CARDS_SUM_PER_COMPANY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custemors_active_FinacialTran_perBranch.aspx.cs">
+      <DependentUpon>Custemors_active_FinacialTran_perBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custemors_active_FinacialTran_perBranch.aspx.designer.cs">
+      <DependentUpon>Custemors_active_FinacialTran_perBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custemors_active_servis.aspx.cs">
+      <DependentUpon>Custemors_active_servis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custemors_active_servis.aspx.designer.cs">
+      <DependentUpon>Custemors_active_servis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custemors_Frinds.aspx.cs">
+      <DependentUpon>Custemors_Frinds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custemors_Frinds.aspx.designer.cs">
+      <DependentUpon>Custemors_Frinds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cus_no_app.aspx.cs">
+      <DependentUpon>Cus_no_app.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cus_no_app.aspx.designer.cs">
+      <DependentUpon>Cus_no_app.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DW_SD_C_S.aspx.cs">
+      <DependentUpon>DW_SD_C_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DW_SD_C_S.aspx.designer.cs">
+      <DependentUpon>DW_SD_C_S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DW_td_C_S.aspx.cs">
+      <DependentUpon>DW_td_C_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DW_td_C_S.aspx.designer.cs">
+      <DependentUpon>DW_td_C_S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KA_BV_Count.aspx.cs">
+      <DependentUpon>KA_BV_Count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KA_BV_Count.aspx.designer.cs">
+      <DependentUpon>KA_BV_Count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KA_cir_Faield_NCB.aspx.cs">
+      <DependentUpon>KA_cir_Faield_NCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KA_cir_Faield_NCB.aspx.designer.cs">
+      <DependentUpon>KA_cir_Faield_NCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KA_cir_NCB.aspx.cs">
+      <DependentUpon>KA_cir_NCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KA_cir_NCB.aspx.designer.cs">
+      <DependentUpon>KA_cir_NCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KA_Dw_Count.aspx.cs">
+      <DependentUpon>KA_Dw_Count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KA_Dw_Count.aspx.designer.cs">
+      <DependentUpon>KA_Dw_Count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KA_ES_Count.aspx.cs">
+      <DependentUpon>KA_ES_Count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KA_ES_Count.aspx.designer.cs">
+      <DependentUpon>KA_ES_Count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KA_MT_Count.aspx.cs">
+      <DependentUpon>KA_MT_Count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KA_MT_Count.aspx.designer.cs">
+      <DependentUpon>KA_MT_Count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KA_PB_Count.aspx.cs">
+      <DependentUpon>KA_PB_Count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KA_PB_Count.aspx.designer.cs">
+      <DependentUpon>KA_PB_Count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_allow_bayeElct.aspx.cs">
+      <DependentUpon>Master_allow_bayeElct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_allow_bayeElct.aspx.designer.cs">
+      <DependentUpon>Master_allow_bayeElct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master_Balance_riquest.aspx.cs">
+      <DependentUpon>master_Balance_riquest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master_Balance_riquest.aspx.designer.cs">
+      <DependentUpon>master_Balance_riquest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master_ChangePin_Sucsses_faield.aspx.cs">
+      <DependentUpon>master_ChangePin_Sucsses_faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master_ChangePin_Sucsses_faield.aspx.designer.cs">
+      <DependentUpon>master_ChangePin_Sucsses_faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master_ChangeState.aspx.cs">
+      <DependentUpon>master_ChangeState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master_ChangeState.aspx.designer.cs">
+      <DependentUpon>master_ChangeState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_ChangeState_Transactions.aspx.cs">
+      <DependentUpon>Master_ChangeState_Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_ChangeState_Transactions.aspx.designer.cs">
+      <DependentUpon>Master_ChangeState_Transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_MoneyTransfer.aspx.cs">
+      <DependentUpon>Master_MoneyTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_MoneyTransfer.aspx.designer.cs">
+      <DependentUpon>Master_MoneyTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_MT_bercard_SUM.aspx.cs">
+      <DependentUpon>Master_MT_bercard_SUM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_MT_bercard_SUM.aspx.designer.cs">
+      <DependentUpon>Master_MT_bercard_SUM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MT_C_S.aspx.cs">
+      <DependentUpon>MT_C_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MT_C_S.aspx.designer.cs">
+      <DependentUpon>MT_C_S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_limet_per_classification.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_limet_per_classification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_limet_per_classification.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_limet_per_classification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_not_benifie.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_not_benifie.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_not_benifit_from Payment.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifit_from Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_not_benifit_from Payment.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifit_from Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_Pay_SumPayment_perDate.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_Pay_SumPayment_perDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_Pay_SumPayment_perDate.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_Pay_SumPayment_perDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_per_branch.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_per_branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_per_branch.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_per_branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_Sum_Pay_ChargeBack.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_ChargeBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_Sum_Pay_ChargeBack.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_ChargeBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_Sum_Pay_PerCity.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_PerCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_Sum_Pay_PerCity.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_PerCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-MerchantState.aspx.cs">
+      <DependentUpon>NC-Mobi-MerchantState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-MerchantState.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-MerchantState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchants_berBeusnisType.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchants_berBeusnisType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchants_berBeusnisType.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchants_berBeusnisType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchants_Class.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchants_Class.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchants_Class.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchants_Class.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchant_per_city.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchant_per_city.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchant_per_city.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchant_per_city.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-Must_custemors_sales.aspx.cs">
+      <DependentUpon>NC-Mobi-Must_custemors_sales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-Must_custemors_sales.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Must_custemors_sales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-num_BeusninTypes.aspx.cs">
+      <DependentUpon>NC-Mobi-num_BeusninTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-num_BeusninTypes.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-num_BeusninTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-FaildBP.aspx.cs">
+      <DependentUpon>NCB-Count-FaildBP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-FaildBP.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildBP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-FaildCards.aspx.cs">
+      <DependentUpon>NCB-Count-FaildCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-FaildCards.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-FaildDW.aspx.cs">
+      <DependentUpon>NCB-Count-FaildDW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-FaildDW.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildDW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-FaildES.aspx.cs">
+      <DependentUpon>NCB-Count-FaildES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-FaildES.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-FaildMT.aspx.cs">
+      <DependentUpon>NCB-Count-FaildMT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-FaildMT.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildMT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesCards.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesCards.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesDW.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesDW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesDW.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesDW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesES.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesES.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesMT.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesMT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesMT.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesMT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesPP.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesPP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Count-SucssesPP.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Counts-AutoSms.aspx.cs">
+      <DependentUpon>NCB-Counts-AutoSms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Counts-AutoSms.aspx.designer.cs">
+      <DependentUpon>NCB-Counts-AutoSms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Counts-smsusers.aspx.cs">
+      <DependentUpon>NCB-Counts-smsusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Counts-smsusers.aspx.designer.cs">
+      <DependentUpon>NCB-Counts-smsusers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-Counts-StopChick.aspx.cs">
+      <DependentUpon>NCB-Counts-StopChick.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-Counts-StopChick.aspx.designer.cs">
+      <DependentUpon>NCB-Counts-StopChick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-LIMET-carddetales.aspx.cs">
+      <DependentUpon>NCB-LIMET-carddetales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-LIMET-carddetales.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-carddetales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-LIMET-DW.aspx.cs">
+      <DependentUpon>NCB-LIMET-DW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-LIMET-DW.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-DW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-LIMET-MantTrans.aspx.cs">
+      <DependentUpon>NCB-LIMET-MantTrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-LIMET-MantTrans.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-MantTrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-LIMET-mobimalpay-Custs.aspx.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Custs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-LIMET-mobimalpay-Custs.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Custs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-LIMET-mobimalpay-Merchants.aspx.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Merchants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-LIMET-mobimalpay-Merchants.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Merchants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCB-LIMET-PP.aspx.cs">
+      <DependentUpon>NCB-LIMET-PP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB-LIMET-PP.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-PP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ncb-mobi-merr.aspx.cs">
+      <DependentUpon>Ncb-mobi-merr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ncb-mobi-merr.aspx.designer.cs">
+      <DependentUpon>Ncb-mobi-merr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ncb-mobi-Pay_All.aspx.cs">
+      <DependentUpon>Ncb-mobi-Pay_All.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ncb-mobi-Pay_All.aspx.designer.cs">
+      <DependentUpon>Ncb-mobi-Pay_All.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ncb-mobi-Pay_All_perBranch.aspx.cs">
+      <DependentUpon>Ncb-mobi-Pay_All_perBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ncb-mobi-Pay_All_perBranch.aspx.designer.cs">
+      <DependentUpon>Ncb-mobi-Pay_All_perBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCBMAIN.aspx.cs">
+      <DependentUpon>NCBMAIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCBMAIN.aspx.designer.cs">
+      <DependentUpon>NCBMAIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_custemors_Pay_SumPayment_perBranch.aspx.cs">
+      <DependentUpon>NC_Mobi_custemors_Pay_SumPayment_perBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_custemors_Pay_SumPayment_perBranch.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_custemors_Pay_SumPayment_perBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_custemors_Sum_Pay_PerMerchant.aspx.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_Pay_PerMerchant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_custemors_Sum_Pay_PerMerchant.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_Pay_PerMerchant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_custemors_Sum_POSPay_PerMerchant.aspx.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_POSPay_PerMerchant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_custemors_Sum_POSPay_PerMerchant.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_POSPay_PerMerchant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_Hight_Merchants_Payment.aspx.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_Hight_Merchants_Payment.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type.aspx.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_num_Citys.aspx.cs">
+      <DependentUpon>NC_Mobi_num_Citys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_num_Citys.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_num_Citys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_num_Merchants_Pos.aspx.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_num_Merchants_Pos.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC_Mobi_num_Merchants_Pos_per_merchant.aspx.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos_per_merchant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC_Mobi_num_Merchants_Pos_per_merchant.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos_per_merchant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderSmsCount.aspx.cs">
+      <DependentUpon>OrderSmsCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderSmsCount.aspx.designer.cs">
+      <DependentUpon>OrderSmsCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custemors_per_branch.aspx.cs">
+      <DependentUpon>custemors_per_branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custemors_per_branch.aspx.designer.cs">
+      <DependentUpon>custemors_per_branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BV_Faield.aspx.cs">
+      <DependentUpon>BV_Faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BV_Faield.aspx.designer.cs">
+      <DependentUpon>BV_Faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BV_sucsees.aspx.cs">
+      <DependentUpon>BV_sucsees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BV_sucsees.aspx.designer.cs">
+      <DependentUpon>BV_sucsees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_mobicash_count.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_mobicash_count.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-custemors_mobicash_count.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_mobicash_count.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custperstate.aspx.cs">
+      <DependentUpon>custperstate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custperstate.aspx.designer.cs">
+      <DependentUpon>custperstate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custs_Act_MTrans.aspx.cs">
+      <DependentUpon>Custs_Act_MTrans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custs_Act_MTrans.aspx.designer.cs">
+      <DependentUpon>Custs_Act_MTrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custs_per_class.aspx.cs">
+      <DependentUpon>Custs_per_class.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custs_per_class.aspx.designer.cs">
+      <DependentUpon>Custs_per_class.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custs_Per_dateTime.aspx.cs">
+      <DependentUpon>Custs_Per_dateTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custs_Per_dateTime.aspx.designer.cs">
+      <DependentUpon>Custs_Per_dateTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cus_Not_Act_withContractNUm.aspx.cs">
+      <DependentUpon>Cus_Not_Act_withContractNUm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cus_Not_Act_withContractNUm.aspx.designer.cs">
+      <DependentUpon>Cus_Not_Act_withContractNUm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cus_Stoped_bybank.aspx.cs">
+      <DependentUpon>Cus_Stoped_bybank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cus_Stoped_bybank.aspx.designer.cs">
+      <DependentUpon>Cus_Stoped_bybank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DW_Faield.aspx.cs">
+      <DependentUpon>DW_Faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DW_Faield.aspx.designer.cs">
+      <DependentUpon>DW_Faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DW_Sucsees.aspx.cs">
+      <DependentUpon>DW_Sucsees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DW_Sucsees.aspx.designer.cs">
+      <DependentUpon>DW_Sucsees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ES_Faield.aspx.cs">
+      <DependentUpon>ES_Faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ES_Faield.aspx.designer.cs">
+      <DependentUpon>ES_Faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ES_Success.aspx.cs">
+      <DependentUpon>ES_Success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ES_Success.aspx.designer.cs">
+      <DependentUpon>ES_Success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login2.aspx.cs">
+      <DependentUpon>login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchants_not_benefiting_from_service.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchants_not_benefiting_from_service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-Merchants_not_benefiting_from_service.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchants_not_benefiting_from_service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-mobimalpay_newSubscriptions.aspx.cs">
+      <DependentUpon>NC-Mobi-mobimalpay_newSubscriptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-mobimalpay_newSubscriptions.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-mobimalpay_newSubscriptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MT_Faield.aspx.cs">
+      <DependentUpon>MT_Faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MT_Faield.aspx.designer.cs">
+      <DependentUpon>MT_Faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MT_Success.aspx.cs">
+      <DependentUpon>MT_Success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MT_Success.aspx.designer.cs">
+      <DependentUpon>MT_Success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NCBMAS.Master.cs">
+      <DependentUpon>NCBMAS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCBMAS.Master.designer.cs">
+      <DependentUpon>NCBMAS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-num_cust_servise.aspx.cs">
+      <DependentUpon>NC-Mobi-num_cust_servise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-num_cust_servise.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-num_cust_servise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OS_Type.aspx.cs">
+      <DependentUpon>OS_Type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OS_Type.aspx.designer.cs">
+      <DependentUpon>OS_Type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pos_transaction_per_merchant.aspx.cs">
+      <DependentUpon>Pos_transaction_per_merchant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pos_transaction_per_merchant.aspx.designer.cs">
+      <DependentUpon>Pos_transaction_per_merchant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PP_C_S.aspx.cs">
+      <DependentUpon>PP_C_S.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PP_C_S.aspx.designer.cs">
+      <DependentUpon>PP_C_S.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PP_Succees.aspx.cs">
+      <DependentUpon>PP_Succees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PP_Succees.aspx.designer.cs">
+      <DependentUpon>PP_Succees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NCB.aspx.cs">
+      <DependentUpon>NCB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NCB.aspx.designer.cs">
+      <DependentUpon>NCB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PP_Faield.aspx.cs">
+      <DependentUpon>PP_Faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PP_Faield.aspx.designer.cs">
+      <DependentUpon>PP_Faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Cus_notact.aspx.cs">
+      <DependentUpon>RP_Cus_notact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RP_Cus_notact.aspx.designer.cs">
+      <DependentUpon>RP_Cus_notact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sdad_Faield.aspx.cs">
+      <DependentUpon>Sdad_Faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sdad_Faield.aspx.designer.cs">
+      <DependentUpon>Sdad_Faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmsUserCount.aspx.cs">
+      <DependentUpon>SmsUserCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmsUserCount.aspx.designer.cs">
+      <DependentUpon>SmsUserCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sum_MassegsUsers_perRequest.aspx.cs">
+      <DependentUpon>Sum_MassegsUsers_perRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sum_MassegsUsers_perRequest.aspx.designer.cs">
+      <DependentUpon>Sum_MassegsUsers_perRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tdawel_faield.aspx.cs">
+      <DependentUpon>Tdawel_faield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tdawel_faield.aspx.designer.cs">
+      <DependentUpon>Tdawel_faield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tejari_card_mazal.aspx.cs">
+      <DependentUpon>Tejari_card_mazal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tejari_card_mazal.aspx.designer.cs">
+      <DependentUpon>Tejari_card_mazal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tej_limet.aspx.cs">
+      <DependentUpon>tej_limet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tej_limet.aspx.designer.cs">
+      <DependentUpon>tej_limet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NC-Mobi-Mobimal_Full.aspx.cs">
+      <DependentUpon>NC-Mobi-Mobimal_Full.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NC-Mobi-Mobimal_Full.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Mobimal_Full.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\app_users_active_per_branchs_W.aspx.cs">
+      <DependentUpon>app_users_active_per_branchs_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\app_users_active_per_branchs_W.aspx.designer.cs">
+      <DependentUpon>app_users_active_per_branchs_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\AutoSmsCount_W.aspx.cs">
+      <DependentUpon>AutoSmsCount_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\AutoSmsCount_W.aspx.designer.cs">
+      <DependentUpon>AutoSmsCount_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\BV_C_S_W.aspx.cs">
+      <DependentUpon>BV_C_S_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\BV_C_S_W.aspx.designer.cs">
+      <DependentUpon>BV_C_S_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\BV_Faield_W.aspx.cs">
+      <DependentUpon>BV_Faield_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\BV_Faield_W.aspx.designer.cs">
+      <DependentUpon>BV_Faield_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\BV_sucsees_W.aspx.cs">
+      <DependentUpon>BV_sucsees_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\BV_sucsees_W.aspx.designer.cs">
+      <DependentUpon>BV_sucsees_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\CARDS_SUM_W.aspx.cs">
+      <DependentUpon>CARDS_SUM_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\CARDS_SUM_W.aspx.designer.cs">
+      <DependentUpon>CARDS_SUM_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\CARDS_SUM_PER_COMPANY_W.aspx.cs">
+      <DependentUpon>CARDS_SUM_PER_COMPANY_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\CARDS_SUM_PER_COMPANY_W.aspx.designer.cs">
+      <DependentUpon>CARDS_SUM_PER_COMPANY_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Custemors_active_FinacialTran_perBranch_W.aspx.cs">
+      <DependentUpon>Custemors_active_FinacialTran_perBranch_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Custemors_active_FinacialTran_perBranch_W.aspx.designer.cs">
+      <DependentUpon>Custemors_active_FinacialTran_perBranch_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Custemors_active_servis_W.aspx.cs">
+      <DependentUpon>Custemors_active_servis_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Custemors_active_servis_W.aspx.designer.cs">
+      <DependentUpon>Custemors_active_servis_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Custemors_Frinds_W.aspx.cs">
+      <DependentUpon>Custemors_Frinds_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Custemors_Frinds_W.aspx.designer.cs">
+      <DependentUpon>Custemors_Frinds_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\custemors_per_branch_W.aspx.cs">
+      <DependentUpon>custemors_per_branch_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\custemors_per_branch_W.aspx.designer.cs">
+      <DependentUpon>custemors_per_branch_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\custperstate_W.aspx.cs">
+      <DependentUpon>custperstate_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\custperstate_W.aspx.designer.cs">
+      <DependentUpon>custperstate_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Custs_Act_MTrans_W.aspx.cs">
+      <DependentUpon>Custs_Act_MTrans_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Custs_Act_MTrans_W.aspx.designer.cs">
+      <DependentUpon>Custs_Act_MTrans_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Custs_per_class_W.aspx.cs">
+      <DependentUpon>Custs_per_class_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Custs_per_class_W.aspx.designer.cs">
+      <DependentUpon>Custs_per_class_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Custs_Per_dateTime_W.aspx.cs">
+      <DependentUpon>Custs_Per_dateTime_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Custs_Per_dateTime_W.aspx.designer.cs">
+      <DependentUpon>Custs_Per_dateTime_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Cus_Not_Act_withContractNUm_W.aspx.cs">
+      <DependentUpon>Cus_Not_Act_withContractNUm_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Cus_Not_Act_withContractNUm_W.aspx.designer.cs">
+      <DependentUpon>Cus_Not_Act_withContractNUm_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Cus_no_app_W.aspx.cs">
+      <DependentUpon>Cus_no_app_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Cus_no_app_W.aspx.designer.cs">
+      <DependentUpon>Cus_no_app_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Cus_Stoped_bybank_W.aspx.cs">
+      <DependentUpon>Cus_Stoped_bybank_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Cus_Stoped_bybank_W.aspx.designer.cs">
+      <DependentUpon>Cus_Stoped_bybank_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\ES_Faield_W.aspx.cs">
+      <DependentUpon>ES_Faield_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\ES_Faield_W.aspx.designer.cs">
+      <DependentUpon>ES_Faield_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\ES_Success_W.aspx.cs">
+      <DependentUpon>ES_Success_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\ES_Success_W.aspx.designer.cs">
+      <DependentUpon>ES_Success_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\KA_BV_Count_W.aspx.cs">
+      <DependentUpon>KA_BV_Count_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\KA_BV_Count_W.aspx.designer.cs">
+      <DependentUpon>KA_BV_Count_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\KA_ES_Count_W.aspx.cs">
+      <DependentUpon>KA_ES_Count_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\KA_ES_Count_W.aspx.designer.cs">
+      <DependentUpon>KA_ES_Count_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\KA_MT_Count_W.aspx.cs">
+      <DependentUpon>KA_MT_Count_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\KA_MT_Count_W.aspx.designer.cs">
+      <DependentUpon>KA_MT_Count_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\MT_C_S_W.aspx.cs">
+      <DependentUpon>MT_C_S_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\MT_C_S_W.aspx.designer.cs">
+      <DependentUpon>MT_C_S_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\MT_Faield_W.aspx.cs">
+      <DependentUpon>MT_Faield_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\MT_Faield_W.aspx.designer.cs">
+      <DependentUpon>MT_Faield_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\MT_Success_W.aspx.cs">
+      <DependentUpon>MT_Success_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\MT_Success_W.aspx.designer.cs">
+      <DependentUpon>MT_Success_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_limet_per_classification_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_limet_per_classification_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_limet_per_classification_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_limet_per_classification_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_mobicash_count_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_mobicash_count_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_mobicash_count_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_mobicash_count_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_not_benifie_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifie_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_not_benifie_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifie_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_not_benifit_from Payment_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifit_from Payment_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_not_benifit_from Payment_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_not_benifit_from Payment_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_Pay_SumPayment_perDate_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_Pay_SumPayment_perDate_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_Pay_SumPayment_perDate_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_Pay_SumPayment_perDate_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_per_branch_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_per_branch_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_per_branch_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_per_branch_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_Sum_Pay_ChargeBack_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_ChargeBack_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_Sum_Pay_ChargeBack_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_ChargeBack_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_Sum_Pay_PerCity_W.aspx.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_PerCity_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-custemors_Sum_Pay_PerCity_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-custemors_Sum_Pay_PerCity_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-MerchantState_W.aspx.cs">
+      <DependentUpon>NC-Mobi-MerchantState_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-MerchantState_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-MerchantState_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchants_berBeusnisType_W.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchants_berBeusnisType_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchants_berBeusnisType_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchants_berBeusnisType_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchants_Class_W.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchants_Class_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchants_Class_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchants_Class_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchants_not_benefiting_from_service_W.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchants_not_benefiting_from_service_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchants_not_benefiting_from_service_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchants_not_benefiting_from_service_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchant_per_city_W.aspx.cs">
+      <DependentUpon>NC-Mobi-Merchant_per_city_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Merchant_per_city_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Merchant_per_city_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-mobimalpay_newSubscriptions_W.aspx.cs">
+      <DependentUpon>NC-Mobi-mobimalpay_newSubscriptions_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-mobimalpay_newSubscriptions_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-mobimalpay_newSubscriptions_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Mobimal_Full_W.aspx.cs">
+      <DependentUpon>NC-Mobi-Mobimal_Full_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Mobimal_Full_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Mobimal_Full_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Must_custemors_sales_W.aspx.cs">
+      <DependentUpon>NC-Mobi-Must_custemors_sales_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-Must_custemors_sales_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-Must_custemors_sales_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-num_BeusninTypes_W.aspx.cs">
+      <DependentUpon>NC-Mobi-num_BeusninTypes_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-num_BeusninTypes_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-num_BeusninTypes_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-num_cust_servise_W.aspx.cs">
+      <DependentUpon>NC-Mobi-num_cust_servise_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC-Mobi-num_cust_servise_W.aspx.designer.cs">
+      <DependentUpon>NC-Mobi-num_cust_servise_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-FaildCards_W.aspx.cs">
+      <DependentUpon>NCB-Count-FaildCards_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-FaildCards_W.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildCards_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-FaildES_W.aspx.cs">
+      <DependentUpon>NCB-Count-FaildES_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-FaildES_W.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildES_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-FaildMT_W.aspx.cs">
+      <DependentUpon>NCB-Count-FaildMT_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-FaildMT_W.aspx.designer.cs">
+      <DependentUpon>NCB-Count-FaildMT_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-SucssesCards_W.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesCards_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-SucssesCards_W.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesCards_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-SucssesES_W.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesES_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-SucssesES_W.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesES_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-SucssesMT_W.aspx.cs">
+      <DependentUpon>NCB-Count-SucssesMT_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Count-SucssesMT_W.aspx.designer.cs">
+      <DependentUpon>NCB-Count-SucssesMT_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Counts-AutoSms_W.aspx.cs">
+      <DependentUpon>NCB-Counts-AutoSms_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Counts-AutoSms_W.aspx.designer.cs">
+      <DependentUpon>NCB-Counts-AutoSms_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-Counts-smsusers_W.aspx.cs">
+      <DependentUpon>NCB-Counts-smsusers_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-Counts-smsusers_W.aspx.designer.cs">
+      <DependentUpon>NCB-Counts-smsusers_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-carddetales_W.aspx.cs">
+      <DependentUpon>NCB-LIMET-carddetales_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-carddetales_W.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-carddetales_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-MantTrans_W.aspx.cs">
+      <DependentUpon>NCB-LIMET-MantTrans_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-MantTrans_W.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-MantTrans_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-mobimalpay-Custs_W.aspx.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Custs_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-mobimalpay-Custs_W.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Custs_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-mobimalpay-Merchants_W.aspx.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Merchants_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NCB-LIMET-mobimalpay-Merchants_W.aspx.designer.cs">
+      <DependentUpon>NCB-LIMET-mobimalpay-Merchants_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Ncb-mobi-merr_W.aspx.cs">
+      <DependentUpon>Ncb-mobi-merr_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Ncb-mobi-merr_W.aspx.designer.cs">
+      <DependentUpon>Ncb-mobi-merr_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Ncb-mobi-Pay_All_perBranch_W.aspx.cs">
+      <DependentUpon>Ncb-mobi-Pay_All_perBranch_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Ncb-mobi-Pay_All_perBranch_W.aspx.designer.cs">
+      <DependentUpon>Ncb-mobi-Pay_All_perBranch_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Ncb-mobi-Pay_All_W.aspx.cs">
+      <DependentUpon>Ncb-mobi-Pay_All_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Ncb-mobi-Pay_All_W.aspx.designer.cs">
+      <DependentUpon>Ncb-mobi-Pay_All_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_custemors_Pay_SumPayment_perBranch_W.aspx.cs">
+      <DependentUpon>NC_Mobi_custemors_Pay_SumPayment_perBranch_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_custemors_Pay_SumPayment_perBranch_W.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_custemors_Pay_SumPayment_perBranch_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_custemors_Sum_Pay_PerMerchant_W.aspx.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_Pay_PerMerchant_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_custemors_Sum_Pay_PerMerchant_W.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_Pay_PerMerchant_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_custemors_Sum_POSPay_PerMerchant_W.aspx.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_POSPay_PerMerchant_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_custemors_Sum_POSPay_PerMerchant_W.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_custemors_Sum_POSPay_PerMerchant_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_Hight_Merchants_Payment_W.aspx.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_Hight_Merchants_Payment_W.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type_W.aspx.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type_W.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_Hight_Merchants_Payment_Per_busnis_Type_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_num_Citys_W.aspx.cs">
+      <DependentUpon>NC_Mobi_num_Citys_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_num_Citys_W.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_num_Citys_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_num_Merchants_Pos_W.aspx.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_num_Merchants_Pos_W.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_num_Merchants_Pos_per_merchant.aspx.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos_per_merchant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\NC_Mobi_num_Merchants_Pos_per_merchant.aspx.designer.cs">
+      <DependentUpon>NC_Mobi_num_Merchants_Pos_per_merchant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\OrderSmsCount_W.aspx.cs">
+      <DependentUpon>OrderSmsCount_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\OrderSmsCount_W.aspx.designer.cs">
+      <DependentUpon>OrderSmsCount_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\OS_Type_W.aspx.cs">
+      <DependentUpon>OS_Type_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\OS_Type_W.aspx.designer.cs">
+      <DependentUpon>OS_Type_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Pos_transaction_per_merchant_W.aspx.cs">
+      <DependentUpon>Pos_transaction_per_merchant_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Pos_transaction_per_merchant_W.aspx.designer.cs">
+      <DependentUpon>Pos_transaction_per_merchant_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\RP_Cus_notact_W.aspx.cs">
+      <DependentUpon>RP_Cus_notact_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\RP_Cus_notact_W.aspx.designer.cs">
+      <DependentUpon>RP_Cus_notact_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\SmsUserCount_W.aspx.cs">
+      <DependentUpon>SmsUserCount_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\SmsUserCount_W.aspx.designer.cs">
+      <DependentUpon>SmsUserCount_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Sum_MassegsUsers_perRequest_W.aspx.cs">
+      <DependentUpon>Sum_MassegsUsers_perRequest_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Sum_MassegsUsers_perRequest_W.aspx.designer.cs">
+      <DependentUpon>Sum_MassegsUsers_perRequest_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\Tejari_card_mazal_W.aspx.cs">
+      <DependentUpon>Tejari_card_mazal_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\Tejari_card_mazal_W.aspx.designer.cs">
+      <DependentUpon>Tejari_card_mazal_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\tej_limet_W.aspx.cs">
+      <DependentUpon>tej_limet_W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\tej_limet_W.aspx.designer.cs">
+      <DependentUpon>tej_limet_W.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\WahdaMaster.Master.cs">
+      <DependentUpon>WahdaMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\WahdaMaster.Master.designer.cs">
+      <DependentUpon>WahdaMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wehda\WEHDAMAIN.aspx.cs">
+      <DependentUpon>WEHDAMAIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wehda\WEHDAMAIN.aspx.designer.cs">
+      <DependentUpon>WEHDAMAIN.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NCBMAS.Master" />
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="assets\fonts\nucleo-icons.eot" />
+    <Content Include="assets\fonts\nucleo-icons.ttf" />
+    <Content Include="assets\fonts\nucleo-icons.woff" />
+    <Content Include="assets\fonts\nucleo-icons.woff2" />
+    <Content Include="assets\sass\lbd\mixins\_buttons.scss" />
+    <Content Include="assets\sass\lbd\mixins\_cards.scss" />
+    <Content Include="assets\sass\lbd\mixins\_chartist.scss" />
+    <Content Include="assets\sass\lbd\mixins\_icons.scss" />
+    <Content Include="assets\sass\lbd\mixins\_inputs.scss" />
+    <Content Include="assets\sass\lbd\mixins\_labels.scss" />
+    <Content Include="assets\sass\lbd\mixins\_morphing-buttons.scss" />
+    <Content Include="assets\sass\lbd\mixins\_navbars.scss" />
+    <Content Include="assets\sass\lbd\mixins\_social-buttons.scss" />
+    <Content Include="assets\sass\lbd\mixins\_table-row.scss" />
+    <Content Include="assets\sass\lbd\mixins\_tabs.scss" />
+    <Content Include="assets\sass\lbd\mixins\_transparency.scss" />
+    <Content Include="assets\sass\lbd\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets\sass\lbd\plugins\_animate.scss" />
+    <Content Include="assets\sass\lbd\plugins\_bootstrap-select.scss" />
+    <Content Include="assets\sass\lbd\plugins\_bootstrap-table.scss" />
+    <Content Include="assets\sass\lbd\plugins\_chartist.scss" />
+    <Content Include="assets\sass\lbd\plugins\_datatables.net.scss" />
+    <Content Include="assets\sass\lbd\plugins\_datetime-picker.scss" />
+    <Content Include="assets\sass\lbd\plugins\_fullcalendar.scss" />
+    <Content Include="assets\sass\lbd\plugins\_jquery.jvectormap.scss" />
+    <Content Include="assets\sass\lbd\plugins\_nouislider.scss" />
+    <Content Include="assets\sass\lbd\plugins\_perfect-scrollbar.scss" />
+    <Content Include="assets\sass\lbd\plugins\_sweetalert2.scss" />
+    <Content Include="assets\sass\lbd\_alerts.scss" />
+    <Content Include="assets\sass\lbd\_bootstrap-switch.scss" />
+    <Content Include="assets\sass\lbd\_buttons.scss" />
+    <Content Include="assets\sass\lbd\_cards.scss" />
+    <Content Include="assets\sass\lbd\_chartist.scss" />
+    <Content Include="assets\sass\lbd\_checkbox-radio-switch.scss" />
+    <Content Include="assets\sass\lbd\_dropdown.scss" />
+    <Content Include="assets\sass\lbd\_fixed-plugin.scss" />
+    <Content Include="assets\sass\lbd\_footers.scss" />
+    <Content Include="assets\sass\lbd\_inputs.scss" />
+    <Content Include="assets\sass\lbd\_misc.scss" />
+    <Content Include="assets\sass\lbd\_mixins.scss" />
+    <Content Include="assets\sass\lbd\_modal.scss" />
+    <Content Include="assets\sass\lbd\_modals.scss" />
+    <Content Include="assets\sass\lbd\_navbars.scss" />
+    <Content Include="assets\sass\lbd\_partial-nucleo-icons.scss" />
+    <Content Include="assets\sass\lbd\_progress-bars.scss" />
+    <Content Include="assets\sass\lbd\_responsive.scss" />
+    <Content Include="assets\sass\lbd\_sidebar-and-main-panel.scss" />
+    <Content Include="assets\sass\lbd\_sliders.scss" />
+    <Content Include="assets\sass\lbd\_social-buttons.scss" />
+    <Content Include="assets\sass\lbd\_tables.scss" />
+    <Content Include="assets\sass\lbd\_tabs-navs-pagination.scss" />
+    <Content Include="assets\sass\lbd\_tags.scss" />
+    <Content Include="assets\sass\lbd\_typography.scss" />
+    <Content Include="assets\sass\lbd\_variables.scss" />
+    <Content Include="assets\sass\light-bootstrap-dashboard.scss" />
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Content>
+    <Content Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Wehda\WahdaMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57989</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44313/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\Test\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Test\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

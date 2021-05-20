@@ -1,0 +1,78 @@
+
+body{
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif
+
+}
+
+.upper-bar{
+  background-color: #333;
+position: relative;
+  text-align: center;
+
+}
+.center-login {
+    margin-left: 25%
+}
+.form {
+    border: 1px solid;
+    border-radius: 35px;
+    padding: 33px 96px;
+    margin: 39px 270px;
+    width: 800px;
+}
+.upper-bar h1{
+padding-top: 100px;
+  color: #FFF;
+  font-size: 35px
+}
+.h3-3{
+ color: #777;
+ font-size: 25px ;
+ padding-bottom: 16px
+}
+
+.row{
+  padding: 40px 30px
+}
+button{
+  margin-left: 80%
+}
+.pass{
+  margin-right: 10px;
+
+}
+
+.footer-copyright{
+background-color: #333
+}
+a{
+  color: #FFF
+}
+
+
+
+.first-div{
+  position: relative;
+}
+.second-div{
+  position: relative;
+}
+
+.none-act {
+    color: red;
+    
+}
+none-act {
+    color: forestgreen;
+}
+
+img {
+    position: absolute;
+    z-index: 999;
+    top: 70px;
+    left: 100px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px
+}

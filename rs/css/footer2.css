@@ -1,0 +1,44 @@
+﻿.footer {
+    background-image: linear-gradient(to right, #0b85a9f5,#1dc185);
+    clip-path: polygon(54% 16%, 67% 19%, 86% 19%, 100% 11%, 100% 100%, 0 100%, 0 18%, 10% 13%, 24% 10%, 36% 11%);
+    color: #FFF;
+}
+
+    .footer .h-footer {
+        padding: 30px 0;
+        padding: 104px 5px 43px 9px;
+        text-align: center
+    }
+
+
+
+.box-logo .logo-bottom{
+  height: 120px
+}
+.bar-bottom {
+  padding: 0;
+}
+.bar-bottom .center{
+  width: 75%;
+  float: right;
+  padding-top: 20px
+}
+.bar-bottom .box-logo{
+  width: 25%;
+  float: left;
+}
+.bar-bottom {
+    background-image: linear-gradient(to right ,#333 ,#0b85a9f5);
+    text-align: center;
+    padding: 20px 0;
+    color: #FFF;
+  /*  margin-top: 25px*/
+}
+.bar-bottom h1 {
+        margin: 0;
+        padding: 4px
+    }
+
+.bar-bottom .h3-3{
+  font-size: 2rem
+}

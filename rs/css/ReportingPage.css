@@ -1,0 +1,61 @@
+﻿html, body {
+    height: 100%;
+    background-color: #1d242b;
+}
+
+body {
+    direction: ltr;
+}
+
+#upperBar img {
+    width:100%;
+}
+
+.col {
+    background-color: #333333;
+    top: 0px;
+    left: 0px;
+}
+
+/*.sidebarCol, .leftCol {  
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}*/
+
+/*.container-fluid {
+    min-height: 100%;
+    overflow: hidden;
+}*/
+
+#upperBar img:hover,
+#upperBar img:active  {
+    opacity: 0.5;
+}
+
+#mainContent {
+    min-height: 745px;
+}
+
+h2 {
+    /*margin-bottom: 15px;*/
+    color: #FFFFFF;
+}
+
+label {
+    color: white;
+    width: auto; 
+    margin-left: 5px;
+}
+
+input {
+    margin: 15px;
+}
+
+select {
+    height: 30px;
+}
+
+.rprtBtn {
+    width: auto;
+    height: 30px;
+}
